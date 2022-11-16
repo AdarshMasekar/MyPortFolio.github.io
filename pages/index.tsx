@@ -53,7 +53,7 @@ const Home: NextPage = () => {
       <Link href="#hero">
         <footer>
           <ChevronDoubleUpIcon
-            className="fixed bg-transparent text-[#FF0080]/20 hover:text-[#FF0080] animate-bounce w-10 h-10
+            className="fixed bg-transparent text-[#4bb1d3]/20 hover:text-[#4bb1d3] animate-bounce w-10 h-10
             bottom-[1%] right-[5%] cursor-pointer z-100"
           />
         </footer>

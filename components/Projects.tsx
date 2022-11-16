@@ -21,12 +21,12 @@ const Projects = (props: Props) => {
     flex-col text-center md:flex-row max-w-full 
     justify-evenly mx-auto items-center z-0"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-[#FF0080] text-2xl">
+      <h3 className="absolute top-24 uppercase tracking-[20px] font-bold text-[#69C9C1] text-2xl">
         Projects
       </h3>
-      <h3 className="absolute top-36 uppercase tracking-[5px] text-xs text-[#EC9EC0]">
-        swipe on a{" "}
-        <span className="text-[#FF0080] text-lg font-bold animate-pulse">
+      <h3 className="absolute z-50 top-36 uppercase tracking-[5px] text-xs text-[#1e9d93]">
+        use arrow keys or swipe on a{" "}
+        <span className="text-[#f98547] text-lg font-bold animate-pulse">
           mockup
         </span>{" "}
         for demo projects
@@ -67,32 +67,30 @@ const Projects = (props: Props) => {
             <div className=" space-y-2 max-w-xl">
               <button className="heroButton">source code</button>
               <button className="heroButton">live demo</button>
-              <h4 className="uppercase text-lg text-[#EC9EC0] tracking-[2px]">
+              <h4 className="uppercase text-lg text-[#1e9d93] tracking-[2px]">
                 case study {i + 1} of {projects.length} :{" "}
-                <span className="uppercase text-xl font-semibold text-[#FF0080] animate-pulse">
+                <span className="uppercase text-xl font-semibold text-[#f98547] animate-pulse">
                   {" "}
                   web demo clone
                 </span>
               </h4>
-              <p className="text-[16px] px-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-                iusto provident, quaerat eum reiciendis ullam perferendis itaque
-                labore omnis aperiam?
+              <p className="text-[16px] px-2 tracking-wider">
+                uploading projects soon ...
               </p>
             </div>
           </div>
         ))}
       </div>
 
-      <div className="w-full absolute top-[28%] bg-gradient-to-r from-[#B21368] via-[#EC9EC0] to-[#EC9EC0] left-0 h-[4px] -skew-y-12 animate-pulse " />
-      <div className="w-full absolute top-[29%] bg-gradient-to-r from-[#B21368] via-[#EC9EC0] to-[#EC9EC0] left-0 h-[3px] -skew-y-12 " />
-      <div className="w-full absolute top-[30%] bg-gradient-to-r from-[#B21368] via-[#EC9EC0] to-[#EC9EC0] left-0 h-[2px] -skew-y-12 " />
-      <div className="w-full absolute top-[31%] bg-gradient-to-r from-[#B21368] via-[#EC9EC0] to-[#EC9EC0] left-0 h-[1px] -skew-y-12 " />
+      <div className="w-full absolute top-[28%] bg-gradient-to-r from-[#69C9C1] via-[#1e9d93]/70 to-[#55ff9c] left-0 h-[4px] -skew-y-12 animate-pulse " />
+      <div className="w-full absolute top-[29%] bg-gradient-to-r from-[#55ff9c] via-[#1e9d93]/70 to-[#1e9d93] left-0 h-[3px] -skew-y-12 " />
+      <div className="w-full absolute top-[30%] bg-gradient-to-r from-[#69C9C1] via-[#1e9d93]/70 to-[#55ff9c] left-0 h-[2px] -skew-y-12 " />
+      <div className="w-full absolute top-[31%] bg-gradient-to-r from-[#69C9C1] via-[#1e9d93]/70 to-[#1e9d93] left-0 h-[1px] -skew-y-12 " />
 
-      <div className="w-full absolute bottom-[10%] bg-gradient-to-r from-[#EC9EC0] via-[#EC9EC0] to-[#B21368] left-0 h-[4px] -skew-y-12 animate-pulse" />
-      <div className="w-full absolute bottom-[11%] bg-gradient-to-r from-[#EC9EC0] via-[#EC9EC0] to-[#B21368] left-0 h-[3px] -skew-y-12" />
-      <div className="w-full absolute bottom-[12%] bg-gradient-to-r from-[#EC9EC0] via-[#EC9EC0] to-[#B21368] left-0 h-[2px] -skew-y-12" />
-      <div className="w-full absolute bottom-[13%] bg-gradient-to-r from-[#EC9EC0] via-[#EC9EC0] to-[#B21368] left-0 h-[1px] -skew-y-12" />
+      <div className="w-full absolute bottom-[10%] bg-gradient-to-r from-[#1e9d93] via-[#1e9d93]/70 to-[#69C9C1] left-0 h-[4px] -skew-y-12 animate-pulse" />
+      <div className="w-full absolute bottom-[11%] bg-gradient-to-r from-[#1e9d93] via-[#55ff9c]/70 to-[#69C9C1] left-0 h-[3px] -skew-y-12" />
+      <div className="w-full absolute bottom-[12%] bg-gradient-to-r from-[#55ff9c] via-[#1e9d93]/70 to-[#69C9C1] left-0 h-[2px] -skew-y-12" />
+      <div className="w-full absolute bottom-[13%] bg-gradient-to-r from-[#1e9d93] via-[#55ff9c]/70 to-[#69C9C1] left-0 h-[1px] -skew-y-12" />
     </motion.div>
   );
 };
