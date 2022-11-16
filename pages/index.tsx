@@ -18,7 +18,7 @@ const Home: NextPage = () => {
       className="bg-[rgb(36,36,36)] text-white h-screen 
     snap-y snap-mandatory overflow-y-scroll overflow-x-hidden 
     z-0 scrollbar-thin scrollbar-track-[#EC9EC0]/10 
-    scrollbar-thumb-[#FF0080]/60 scrollbar-thumb-rounded"
+    scrollbar-thumb-[#69C9C1]/60 scrollbar-thumb-rounded"
     >
       <Head>
         <title>Adarsh Masekar Portfolio</title>
