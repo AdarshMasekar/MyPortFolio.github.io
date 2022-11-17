@@ -50,11 +50,11 @@ const About = (props: Props) => {
           </span>{" "}
           me
         </h4>
-        <p className="text-md tracking-widest leading-8 ">
+        <p className="text-md tracking-[4px] leading-8 ">
           I am Graduate student from <span className="underline text-[#ff713e]">Computer science</span> branch , My current CGPA is <span className="text-bold text-[#ff713e]">8.3</span> ,
           I have done Internship in <span className="text-semibold text-[#ff713e]/90">Datascience</span> ,
           My Technical skills include <span className="text-semi-bold text text-[#ff713e]"> Python , C++ , HTML/CSS , REACT</span> etc .
-          I have Been active on  <span className="text-bold text-xl text-[#ff713e]"><a href="https://leetcode.com/adarshmasekar/">Leetcode</a>  <a href="https://www.codingninjas.com/codestudio/profile/Adarsh_55">Coding Ninjas</a></span> platforms for practicing problem solving skills and enhancing how to use my DSA knowledge in realworld .
+          I have Been active on  <span className="text-bold text-xl text-[#ff713e]"><a href="https://leetcode.com/adarshmasekar/">Leetcode</a> </span> and <span className="text-bold text-xl text-[#ff713e]"> <a href="https://www.codingninjas.com/codestudio/profile/Adarsh_55">Coding Ninjas</a></span> platforms for practicing problem solving skills and enhancing how to use my DSA knowledge in realworld .
         </p>
       </div>
       
