@@ -36,7 +36,7 @@ const Contact = (props: Props) => {
       // x:0
     }}
     transition={{
-      duration: 1,ease:"circInOut"
+      duration: 1.5,ease:"circInOut"
     }} 
       className="h-screen relative flex flex-col text-center
       max-w-7xl  px-10 mx-auto items-center justify-evenly"
