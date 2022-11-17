@@ -135,8 +135,8 @@ const Contact = (props: Props) => {
           />
           <button
             type="submit"
-            className="focus:bg-[#69C9C1]>
-            ] focus:text-[#fff] heroButton font-bold border-2 border-[#69C9C1]/60 text-[#69C9C1]/60 text-[16px]"
+            className="heroButton focus:bg-[#69C9C1]>
+            ] focus:text-[#fff] hover:  font-bold border-2 border-[#69C9C1]/60 text-[#69C9C1]/60 text-[16px]"
           >
             send message
           </button>
