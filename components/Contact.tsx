@@ -27,7 +27,7 @@ const Contact = (props: Props) => {
   return (
     <div
       className="h-screen relative flex flex-col text-center
-      max-w-7xl px-10 mx-auto items-center justify-evenly"
+      max-w-7xl  px-10 mx-auto items-center justify-evenly"
       >
       <h3 className="absolute top-24 uppercase font-bold tracking-[20px] text-2xl text-[#69C9C1]">
         Contact
@@ -40,7 +40,7 @@ const Contact = (props: Props) => {
         AND BOUNCING THE IDEA !
       </h3>
 
-      <div className="absolute top-56 flex flex-col space-y-14 lg:w-[95%]  md:w-[60%]">
+      <div className="absolute top-48  flex flex-col space-y-5 lg:w-[95%] h-[80%]  md:w-[60%]">
         <div className="items-center justify-center  grid grid-cols-2 lg:grid-cols-4 gap-2 md:grid-cols-2 sm:grid-cols-2 ">
           <a href="https://goo.gl/maps/uWvrh5bDZR1y1fro8">
             <div className="flex flex-col flex-shrink-0 items-center  space-y-2 justify-center ">
@@ -88,7 +88,7 @@ const Contact = (props: Props) => {
         </h3>
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col space-y-5 mx-auto sm:p-4 lg:w-[95%] md:w-[60%]"
+          className="flex flex-col space-y-6 mx-auto sm:p-4 lg:w-[95%] md:w-[60%]"
           >
     
             <input
