@@ -64,18 +64,19 @@ const Projects = (props: Props) => {
                 alt="Photos Icon Responsive"
               />
             </picture>
-            <div className=" space-y-2 max-w-xl">
-              <button className="heroButton">source code</button>
-              <button className="heroButton">live demo</button>
+            <div className=" space-y-2 max-w-xl ">
+              {/* <a href="https://github.com/AdarshMasekar/Bus-Ticket-Reservation-/tree/main/Project" className=" heroButton btn  border rounded-full p-2" role="button">Source Code</a> */}
+              <button className="heroButton"><a href="https://github.com/AdarshMasekar/Bus-Ticket-Reservation-/tree/main/Project">Source code</a></button>
+              <button className="heroButton"><a href="https://github.com/AdarshMasekar/Bus-Ticket-Reservation-/tree/main/Project">live demo</a></button>
               <h4 className="uppercase text-lg text-[#1e9d93] tracking-[2px]">
-                case study {i + 1} of {projects.length} :{" "}
+                case study :
                 <span className="uppercase text-xl font-semibold text-[#f98547] animate-pulse">
                   {" "}
-                  web demo clone
+                  Android App
                 </span>
               </h4>
               <p className="text-[16px] px-2 tracking-wider">
-                uploading projects soon ...
+                Android Application developed using java and xml it is basically a clone app for online ticket booking
               </p>
             </div>
           </div>

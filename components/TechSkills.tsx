@@ -32,7 +32,18 @@ const TechSkills = (props: Props) => {
         for currency proficiency
       </h3>
 
-      <div className="grid grid-cols-5 gap-10 absolute top-60">
+      <motion.div
+      initial={{
+        opacity: 0,
+        // x:-500
+      }}
+      whileInView={{
+        opacity: 1,
+        // x:0
+      }}
+      transition={{
+        duration: 1.5,ease:"easeIn"
+      }} className="grid  justify-center grid-cols-3 gap-10 lg:grid-cols-5 lg:gap-10 md:grid-cols-4 md:gap-8 xs:grid-cols-4 sm:gap-6 absolute top-60">
         <Skills tech="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" lvl="90" stack="PYTHON"/>
         <Skills tech="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" lvl="80" stack="C++"/>
         <Skills tech="https://cdn-icons-png.flaticon.com/512/3161/3161133.png" lvl="70" stack="SQL"/>
@@ -50,7 +61,7 @@ const TechSkills = (props: Props) => {
         <Skills tech="https://3.bp.blogspot.com/-yvrV6MUueGg/ToICp0YIDPI/AAAAAAAAADg/SYKg4dWpyC43AAfrDwBTR0VYmYT0QshEgCPcBGAYYCw/s1600/OpenCV_Logo.png" lvl="60" stack="OPENCV"/>
 
        
-      </div>
+      </motion.div>
     </motion.div>
   );
 };

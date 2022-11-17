@@ -15,7 +15,7 @@ type section = {};
 const Home: NextPage = () => {
   return (
     <div
-      className="bg-[rgb(36,36,36)] text-white h-screen 
+    className="bg-[rgb(36,36,36)] text-white h-screen 
     snap-y snap-mandatory overflow-y-scroll overflow-x-hidden 
     z-0 scrollbar-thin scrollbar-track-[#EC9EC0]/10 
     scrollbar-thumb-[#69C9C1]/60 scrollbar-thumb-rounded"
@@ -52,7 +52,7 @@ const Home: NextPage = () => {
 
       <Link href="#hero">
         <footer>
-          <ChevronDoubleUpIcon
+        <ChevronDoubleUpIcon
             className="fixed bg-transparent text-[#4bb1d3]/20 hover:text-[#4bb1d3] animate-bounce w-10 h-10
             bottom-[1%] right-[5%] cursor-pointer z-100"
           />

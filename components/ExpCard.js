@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 
 
-function ExpCard({role,company,cmplogo,duration,tech1,tech2,tech3}){
+function ExpCard({role,company,cmplogo,duration,tech1,tech2,tech3,task1,task2,task3,task4}){
   return (
     <article
       className="text-center flex flex-col rounded-lg sm:rounded-lg md:rounded-lg items-center space-y-7 
@@ -31,8 +31,8 @@ function ExpCard({role,company,cmplogo,duration,tech1,tech2,tech3}){
         alt=""
       />
 
-      <div className="px-0 md:px-10">
-        <h4 className="text-xl font-bold tracking-wider text-[#ff7733]  animate-pulse hover:animate-none">{role}</h4>
+      <div className="px-4 sm:mx-2 md:px-10">
+        <h4 className="text-xl px-4 font-bold tracking-wider text-[#ff7733]  animate-pulse hover:animate-none">{role}</h4>
         <p className="font-semibold text-sm mt-1 text-[#69C9C1]/80">
           {company}
         </p>
@@ -58,20 +58,16 @@ function ExpCard({role,company,cmplogo,duration,tech1,tech2,tech3}){
 
         <ul className="list-disc space-y-4 ml-5 text-sm text-left px-10 ">
           <li>
-            Responsibility - daily task Responsibility - daily
-            taskResponsibility - 
+            {task1}
           </li>
           <li>
-            Responsibility - daily task Responsibility - daily
-            taskResponsibility - 
+            {task2}
           </li>
           <li>
-            Responsibility - daily task Responsibility - daily
-            taskResponsibility - 
+           {task3}
           </li>
           <li>
-            Responsibility - daily task Responsibility - daily
-            taskResponsibility - 
+          {task4}
           </li>
         </ul>
       </div>
