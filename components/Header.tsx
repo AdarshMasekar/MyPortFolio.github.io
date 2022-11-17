@@ -29,13 +29,13 @@ function Header({}: Props) {
       >
         <SocialIcon
        className=' opacity-75 hover:opacity-100 hover:animate-bounce hover:shadow-green-300  rounded-full'
-          url="https://www.github.com/PattyCutie"
+          url="https://www.github.com/AdarshMasekar"
           fgColor={iconsprimary}
           bgColor="transparent"
         />
         <SocialIcon
        className=' opacity-75 hover:opacity-100 hover:animate-bounce  hover:shadow-green-300  rounded-full'
-          url="https://www.linkedin.com/in/patpicha-sit/"
+          url="https://www.linkedin.com/in/adarsh-masekar-826a2423a/"
           fgColor={iconsprimary}
           bgColor="transparent"
         />
@@ -45,12 +45,7 @@ function Header({}: Props) {
            fgColor= {iconsprimary}
            bgColor='transparent'
            />
-        <SocialIcon
-         className=' opacity-75 hover:opacity-100 hover:animate-bounce  hover:shadow-green-300  rounded-full'
-          url="https://www.instagram.com/pattyindev"
-          fgColor={iconsprimary}
-          bgColor="transparent"
-        />
+       
         <SocialIcon
         className=' opacity-75 hover:opacity-100 hover:animate-bounce hover:shadow-green-300  rounded-full'
            url='https://www.facebook.com/adarsh.masekar.55'
