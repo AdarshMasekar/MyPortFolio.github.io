@@ -15,7 +15,7 @@ const Projects = (props: Props) => {
         opacity: 1,
       }}
       transition={{
-        duration: 1.5,
+        duration:2,
       }}
       className="h-screen relative flex overflow-hidden 
     flex-col text-center md:flex-row max-w-full 

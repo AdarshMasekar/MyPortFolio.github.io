@@ -6,6 +6,7 @@ import {
   MapPinIcon,
 } from "@heroicons/react/24/outline";
 import { SubmitHandler, useForm } from "react-hook-form";
+import { motion } from "framer-motion";
 
 type Props = {};
 
@@ -25,7 +26,17 @@ const Contact = (props: Props) => {
   };
 
   return (
-    <div
+    <motion.div
+    initial={{
+      opacity: 0,
+    }}
+    whileInView={{
+      opacity: 1,
+    }}
+    // viewport={{ once: true }}
+    transition={{
+      duration: 1.5,
+    }}
       className="h-screen relative flex flex-col text-center
       max-w-7xl  px-10 mx-auto items-center justify-evenly"
       >
@@ -130,7 +141,7 @@ const Contact = (props: Props) => {
           </button>
         </form>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -15,7 +15,7 @@ const TechSkills = (props: Props) => {
         opacity: 1,
       }}
       transition={{
-        duration: 1.5,
+        duration: 2,
       }}
       className="flex relative flex-col text-center md:text-left xl:flex-row 
     max-w-[1500px] xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto 

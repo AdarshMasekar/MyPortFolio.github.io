@@ -13,7 +13,7 @@ const Experience = (props: Props) => {
       whileInView={{
         opacity: 1,
       }}
-       //   viewport={{ once: true }}
+         viewport={{ once: true }}
       transition={{
         duration: 1.5,
       }}

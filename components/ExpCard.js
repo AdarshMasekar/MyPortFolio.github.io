@@ -5,7 +5,17 @@ import { motion } from "framer-motion";
 
 function ExpCard({role,company,cmplogo,duration,tech1,tech2,tech3,task1,task2,task3,task4}){
   return (
-    <article
+    <motion.article
+    initial={{
+      opacity: 0,
+    }}
+    whileInView={{
+      opacity: 1,
+    }}
+    viewport={{ once: true }}
+    transition={{
+      duration: 1.5,
+    }}
       className="text-center flex flex-col rounded-lg sm:rounded-lg md:rounded-lg items-center space-y-7 
       flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center
       bg-[#EC9EC0]/20 p-10 hover:opacity-100 opacity-40
@@ -71,7 +81,7 @@ function ExpCard({role,company,cmplogo,duration,tech1,tech2,tech3,task1,task2,ta
           </li>
         </ul>
       </div>
-    </article>
+    </motion.article>
   );
 };
 
