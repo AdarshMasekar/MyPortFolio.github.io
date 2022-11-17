@@ -9,14 +9,15 @@ const Experience = (props: Props) => {
     <motion.div
       initial={{
         opacity: 0,
+        // x:-500
       }}
       whileInView={{
         opacity: 1,
+        // x:0
       }}
-         viewport={{ once: true }}
       transition={{
-        duration: 1.5,
-      }}
+        duration: 1,ease:"circInOut"
+      }} 
       className="flex relative overflow-hidden flex-col text-center
       md:flex-row max-w-full px-10 h-screen justify-evenly mx-auto items-center"
     >

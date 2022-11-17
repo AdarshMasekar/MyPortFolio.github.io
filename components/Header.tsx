@@ -13,7 +13,7 @@ function Header({}: Props) {
     <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
       <motion.div
         initial={{
-          x: -500,
+          x: -200,
           opacity: 0,
           scale: 0.5,
         }}
@@ -23,7 +23,7 @@ function Header({}: Props) {
           scale: 1,
         }}
         transition={{
-          duration: 2.0,
+          duration: 1.5,
         }}
         className="flex flex-row items-center "
       >

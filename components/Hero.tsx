@@ -27,14 +27,16 @@ const Hero = ({}: Props) => {
     <motion.div
     initial={{
       opacity: 0,
+      // x:-500
     }}
     whileInView={{
       opacity: 1,
+      // x:0
     }}
-    viewport={{ once: true }}
     transition={{
-      duration: 2,
-    }} className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
+      duration: 1,ease:"circInOut"
+    }} 
+     className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
       <picture>
         <img

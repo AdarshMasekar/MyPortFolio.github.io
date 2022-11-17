@@ -6,14 +6,16 @@ function Skills({tech,lvl,stack}) {
     <motion.div
     initial={{
       opacity: 0,
+      // x:-500
     }}
     whileInView={{
       opacity: 1,
+      // x:0
     }}
-    viewport={{ once: true }}
     transition={{
-      duration: 2,
-    }} className="group relative flex cursor-pointer">
+      duration: 1,ease:"circInOut"
+    }} 
+     className="group relative flex cursor-pointer">
     <img
       className="rounded-full border-[2px] border-[#ff713e]/80
       object-cover p-2 w-20 h-20 md:w-20 md:h-20 xl:w-24 xl:h-24

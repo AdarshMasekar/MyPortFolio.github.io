@@ -8,15 +8,17 @@ const Projects = (props: Props) => {
 
   return (
     <motion.div
-      initial={{
-        opacity: 0,
-      }}
-      whileInView={{
-        opacity: 1,
-      }}
-      transition={{
-        duration:2,
-      }}
+    initial={{
+      opacity: 0,
+      // x:-500
+    }}
+    whileInView={{
+      opacity: 1,
+      // x:0
+    }}
+    transition={{
+      duration: 1,ease:"circInOut"
+    }} 
       className="h-screen relative flex overflow-hidden 
     flex-col text-center md:flex-row max-w-full 
     justify-evenly mx-auto items-center z-0"

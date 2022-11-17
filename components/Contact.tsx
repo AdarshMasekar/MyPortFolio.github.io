@@ -29,14 +29,15 @@ const Contact = (props: Props) => {
     <motion.div
     initial={{
       opacity: 0,
+      // x:-500
     }}
     whileInView={{
       opacity: 1,
+      // x:0
     }}
-    // viewport={{ once: true }}
     transition={{
-      duration: 1.5,
-    }}
+      duration: 1,ease:"circInOut"
+    }} 
       className="h-screen relative flex flex-col text-center
       max-w-7xl  px-10 mx-auto items-center justify-evenly"
       >

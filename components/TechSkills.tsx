@@ -8,15 +8,18 @@ type Props = {};
 const TechSkills = (props: Props) => {
   return (
     <motion.div
-      initial={{
-        opacity: 0,
-      }}
-      whileInView={{
-        opacity: 1,
-      }}
-      transition={{
-        duration: 2,
-      }}
+    initial={{
+      opacity: 0,
+      // x:-500
+    }}
+    whileInView={{
+      opacity: 1,
+      // x:0
+    }}
+    transition={{
+      duration: 1,ease:"circInOut"
+    }} 
+      
       className="flex relative flex-col text-center md:text-left xl:flex-row 
     max-w-[1500px] xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto 
     items-center"
@@ -35,15 +38,14 @@ const TechSkills = (props: Props) => {
       <motion.div
       initial={{
         opacity: 0,
-        // x:-500
       }}
       whileInView={{
         opacity: 1,
-        // x:0
       }}
       transition={{
-        duration: 1.5,ease:"easeIn"
-      }} className="grid  justify-center grid-cols-3 gap-10 lg:grid-cols-5 lg:gap-10 md:grid-cols-4 md:gap-8 xs:grid-cols-4 sm:gap-6 absolute top-60">
+        duration: 1,
+      }}
+     className="grid  justify-center grid-cols-3 gap-10 lg:grid-cols-5 lg:gap-10 md:grid-cols-4 md:gap-8 xs:grid-cols-4 sm:gap-6 absolute top-60">
         <Skills tech="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" lvl="90%" stack="PYTHON"/>
         <Skills tech="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" lvl="80%" stack="C++"/>
         <Skills tech="https://cdn-icons-png.flaticon.com/512/3161/3161133.png" lvl="70%" stack="SQL"/>
