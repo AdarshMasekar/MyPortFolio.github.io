@@ -1,19 +1,19 @@
 <h1> Website look on PC </h1>
 <div width="250px">
-<img width="145px" src="samplePics/hero.png"/>
-<img width="145px" src="samplePics/about.png"/>
-<img width="145px" src="samplePics/Techstack.png"/>
-<img width="145px" src="samplePics/projectcs.png"/>
-<img width="145px" src="samplePics/contact.png"/>
+<img width="245px" src="samplePics/hero.png"/>
+<img width="245px" src="samplePics/about.png"/>
+<img width="245px" src="samplePics/Techstack.png"/>
+<img width="245px" src="samplePics/projectcs.png"/>
+<img width="245px" src="samplePics/contact.png"/>
 </div>
 <hr/>
 <div width="250px">
 <h1> Website look on Mobile </h1>
-<img width="145px" src="samplePics/hero_m.png"/>
-<img width="145px" src="samplePics/about_m.png"/>
-<img width="45px" src="samplePics/techstack_m.png"/>
-<img width="145px" src="samplePics/projects_m.png"/>
-<img width="145px" src="samplePics/contacts_m.png"/>
+<img width="245px" src="samplePics/hero_m.png"/>
+<img width="245px" src="samplePics/about_m.png"/>
+<img width="245px" src="samplePics/techstack_m.png"/>
+<img width="245px" src="samplePics/projects_m.png"/>
+<img width="245px" src="samplePics/contacts_m.png"/>
 </div>
 
 <hr/>
