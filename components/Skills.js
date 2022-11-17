@@ -1,8 +1,19 @@
 import React from 'react'
+import { motion } from "framer-motion";
 
 function Skills({tech,lvl,stack}) {
   return (
-    <div className="group relative flex cursor-pointer">
+    <motion.div
+    initial={{
+      opacity: 0,
+    }}
+    whileInView={{
+      opacity: 1,
+    }}
+    viewport={{ once: true }}
+    transition={{
+      duration: 2,
+    }} className="group relative flex cursor-pointer">
     <img
       className="rounded-full border-[2px] border-[#ff713e]/80
       object-cover p-2 w-20 h-20 md:w-20 md:h-20 xl:w-24 xl:h-24
@@ -21,7 +32,7 @@ function Skills({tech,lvl,stack}) {
       <p className="text-bold text-center my-2 text-[#ff7032]">{stack}</p>
     </div>
    
-  </div>
+  </motion.div>
   )
 }
 
