@@ -1,18 +1,20 @@
 <h1> Website look on PC </h1>
-<img src="samplePics/hero.png"/>
-<img src="samplePics/about.png"/>
-<img src="samplePics/Techstack.png"/>
-<img src="samplePics/project.png"/>
-<img src="samplePics/contact.png"/>
-
+<div width="250px">
+<img width="45px" src="samplePics/hero.png"/>
+<img width="45px" src="samplePics/about.png"/>
+<img width="45px" src="samplePics/Techstack.png"/>
+<img width="45px" src="samplePics/projectcs.png"/>
+<img width="45px" src="samplePics/contact.png"/>
+</div>
 <hr/>
+<div width="250px">
 <h1> Website look on Mobile </h1>
-<img src="samplePics/hero_m.png"/>
-<img src="samplePics/about_m.png"/>
-<img src="samplePics/techstack_m.png"/>
-<img src="samplePics/project_m.png"/>
-<img src="samplePics/contact_m.png"/>
-
+<img width="45px" src="samplePics/hero_m.png"/>
+<img width="45px" src="samplePics/about_m.png"/>
+<img width="45px" src="samplePics/techstack_m.png"/>
+<img width="45px" src="samplePics/projects_m.png"/>
+<img width="45px" src="samplePics/contacts_m.png"/>
+</div>
 
 <hr/>
 
