@@ -1,3 +1,22 @@
+<h1> Website look on PC </h1>
+<img src="samplePics/hero.png"/>
+<img src="samplePics/about.png"/>
+<img src="samplePics/Techstack.png"/>
+<img src="samplePics/project.png"/>
+<img src="samplePics/contact.png"/>
+
+<hr/>
+<h1> Website look on Mobile </h1>
+<img src="samplePics/hero_m.png"/>
+<img src="samplePics/about_m.png"/>
+<img src="samplePics/techstack_m.png"/>
+<img src="samplePics/project_m.png"/>
+<img src="samplePics/contact_m.png"/>
+
+
+<hr/>
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
