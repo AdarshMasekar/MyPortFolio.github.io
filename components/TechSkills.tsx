@@ -53,8 +53,8 @@ const TechSkills = (props: Props) => {
         <Skills tech="https://cdn-icons-png.flaticon.com/512/732/732190.png" lvl="80%" stack="CSS"/>
         <Skills tech="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" lvl="80%" stack="BOOTSTRAP"/>
         <Skills tech="https://seeklogo.com/images/T/tailwind-css-logo-5AD4175897-seeklogo.com.png" lvl="80%" stack="TAILWIND"/>
-        <Skills tech="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" lvl="70" stack="JAVASCRIPT"/>
-        <Skills tech="https://seeklogo.com/images/N/numpy-logo-479C24EC79-seeklogo.com.png" lvl="805" stack="NUMPY"/>
+        <Skills tech="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" lvl="70%" stack="JAVASCRIPT"/>
+        <Skills tech="https://seeklogo.com/images/N/numpy-logo-479C24EC79-seeklogo.com.png" lvl="80%" stack="NUMPY"/>
         <Skills tech="https://seeklogo.com/images/P/pandas-logo-776F6D45BB-seeklogo.com.png?v=637737823900000000" lvl="70%" stack="PANDAS"/>
         <Skills tech="https://seeklogo.com/images/M/matplotlib-logo-7676870AC0-seeklogo.com.png" lvl="70%" stack="MATPLOTLIB"/>
         <Skills tech="https://seeklogo.com/images/S/seaborn-logo-244EB2DEC5-seeklogo.com.png" lvl="70%" stack="SEABORN"/>
