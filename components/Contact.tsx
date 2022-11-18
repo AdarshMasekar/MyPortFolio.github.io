@@ -36,7 +36,7 @@ const Contact = (props: Props) => {
       // x:0
     }}
     transition={{
-      duration: 1.5,ease:"circInOut"
+      duration: 1,ease:"easeInOut"
     }} 
       className="h-screen relative flex flex-col text-center
       max-w-7xl  px-10 mx-auto items-center justify-evenly"
@@ -52,7 +52,19 @@ const Contact = (props: Props) => {
         AND BOUNCING THE IDEA !
       </h3>
 
-      <div className="absolute top-48  flex flex-col space-y-5 lg:w-[95%] h-[80%]  md:w-[60%]">
+      <motion.div
+       initial={{
+        opacity: 0,
+        // x:-500
+      }}
+      whileInView={{
+        opacity: 1,
+        // x:0
+      }}
+      transition={{
+        duration: 1,ease:"easeInOut"
+      }} 
+       className="absolute top-48  flex flex-col space-y-5 lg:w-[95%] h-[80%]  md:w-[60%]">
         <div className="items-center justify-center  grid grid-cols-2 lg:grid-cols-4 gap-2 md:grid-cols-2 sm:grid-cols-2 ">
           <a href="https://goo.gl/maps/uWvrh5bDZR1y1fro8">
             <div className="flex flex-col flex-shrink-0 items-center  space-y-2 justify-center ">
@@ -93,10 +105,12 @@ const Contact = (props: Props) => {
               </a>
         </div>
 
-        <h3 className="text-xs text-[#69C9C1] tracking-[2px] ">
-          I AM VERY <span className="text-lg text-[#f88f3e]"> RESPONSIVE</span>{" "}
-          AND <span className="text-lg text-[#f88f3e]/80">ALWAYS HAPPY</span> TO
-          HEAR FROM YOU
+      
+        <h3 className=" uppercase tracking-[5px] text-xs text-[#69C9C1]/80">
+        I AM VERY <span className="text-lg text-[#f88f3e]"> RESPONSIVE</span>{" "} AND
+        <span className="text-[#f98547] text-lg font-bold animate-pulse"> ALWAYS HAPPY
+          
+        </span>{" "}TO <span className=" font-bold">HEAR FROM YOU </span>
         </h3>
         <form
           onSubmit={handleSubmit(onSubmit)}
@@ -141,7 +155,7 @@ const Contact = (props: Props) => {
             send message
           </button>
         </form>
-      </div>
+      </motion.div>
     </motion.div>
   );
 };

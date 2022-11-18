@@ -34,7 +34,18 @@ const Projects = (props: Props) => {
         for demo projects
       </h3>
 
-      <div
+      <motion.div
+       initial={{
+        opacity: 0,
+        // x:-500
+      }}
+      whileInView={{
+        opacity: 1,
+        // x:0
+      }}
+      transition={{
+        duration: 1,ease:"easeInOut"
+      }} 
         className="relative w-full flex overflow-x-hidden overflow-y-hidden
       snap-x snap-mandatory z-20"
       >
@@ -83,7 +94,7 @@ const Projects = (props: Props) => {
             </div>
           </div>
         ))}
-      </div>
+      </motion.div>
 
       <div className="w-full absolute top-[28%] bg-gradient-to-r from-[#69C9C1] via-[#1e9d93]/70 to-[#55ff9c] left-0 h-[4px] -skew-y-12 animate-pulse " />
       <div className="w-full absolute top-[29%] bg-gradient-to-r from-[#55ff9c] via-[#1e9d93]/70 to-[#1e9d93] left-0 h-[3px] -skew-y-12 " />
