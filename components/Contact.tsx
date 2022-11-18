@@ -72,7 +72,7 @@ const Contact = (props: Props) => {
               <h4 className="md:inline-flex text-[#69C9C1]/80 uppercase">
                 location
               </h4>
-              <p className=" md:inline-flex hidden">Karwar India</p>
+              <p className=" md:inline-flex hidden">Karwar, India</p>
             </div>
           </a>
 
