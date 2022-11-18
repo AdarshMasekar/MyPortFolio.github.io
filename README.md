@@ -1,3 +1,26 @@
+<h1> Live and Running </h1>
+<a href="https://adarshmasekar.vercel.app/"> Click Here to See </a>
+<h1> Website look on PC </h1>
+<div width="250px">
+<img width="300px" src="samplePics/hero.png"/>
+<img width="300px" src="samplePics/about.png"/>
+<img width="300px" src="samplePics/Techstack.png"/>
+<img width="300px" src="samplePics/projectcs.png"/>
+<img width="300px" src="samplePics/contact.png"/>
+</div>
+<hr/>
+<div width="250px">
+<h1> Website look on Mobile </h1>
+<img width="175px" src="samplePics/hero_m.png"/>
+<img width="175px" src="samplePics/about_m.png"/>
+<img width="175px" src="samplePics/techstack_m.png"/>
+<img width="175px" src="samplePics/projects_m.png"/>
+<img width="175px" src="samplePics/contacts_m.png"/>
+</div>
+
+<hr/>
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
