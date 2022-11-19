@@ -41,10 +41,10 @@ const Contact = (props: Props) => {
       className="h-screen relative flex flex-col text-center
       max-w-7xl  px-10 mx-auto items-center justify-evenly"
       >
-      <h3 className="absolute top-24 uppercase font-bold tracking-[20px] text-2xl text-[#69C9C1]">
+      <h3 className="absolute top-24 uppercase font-bold tracking-[20px] text-2xl text-primary">
         Contact
       </h3>
-      <h3 className="absolute top-36 uppercase tracking-[5px] text-xs text-[#69C9C1]/80">
+      <h3 className="absolute top-36 uppercase tracking-[5px] text-xs text-primary/90">
         PING ME{" "}
         <span className="text-[#f98547] text-lg font-bold animate-pulse">
           MESSAGE
@@ -64,41 +64,41 @@ const Contact = (props: Props) => {
       transition={{
         duration: 1,ease:"easeInOut"
       }} 
-       className="absolute top-48  flex flex-col space-y-5 lg:w-[95%] h-[80%]  md:w-[60%]">
+       className="absolute top-48  flex flex-col space-y-5 lg:w-[95%] h-[90%]  md:w-[90%]">
         <div className="items-center justify-center  grid grid-cols-2 lg:grid-cols-4 gap-2 md:grid-cols-2 sm:grid-cols-2 ">
           <a href="https://goo.gl/maps/uWvrh5bDZR1y1fro8">
             <div className="flex flex-col flex-shrink-0 items-center  space-y-2 justify-center ">
-              <MapPinIcon className="flex  text-[#69C9C1] w-7 h-7 hover:animate-bounce" />
-              <h4 className="md:inline-flex text-[#69C9C1]/80 uppercase">
+              <MapPinIcon className="flex  text-primary w-7 h-7 hover:animate-bounce" />
+              <h4 className="md:inline-flex text-primary/90 uppercase ">
                 location
               </h4>
-              <p className=" md:inline-flex hidden">Karwar, India</p>
+              <p className=" md:inline-flex hidden text-[#f98547]">Karwar, India</p>
             </div>
           </a>
 
           <a href="tel:+919591265305">
             <div className="flex flex-col flex-shrink-0 items-center  space-y-2 justify-center">
-              <DevicePhoneMobileIcon className="flex text-[#69C9C1] w-7 h-7 hover:animate-bounce" />
-              <h4 className="md:inline-flex text-[#69C9C1]/80 uppercase ">
+              <DevicePhoneMobileIcon className="flex text-primary w-7 h-7 hover:animate-bounce" />
+              <h4 className="md:inline-flex text-primary/90 uppercase ">
                 call me
               </h4>
-              <p className=" md:inline-flex hidden">+91 959 126 5305</p>
+              <p className=" md:inline-flex hidden text-[#f98547] ">+91 959 126 5305</p>
             </div>
           </a>
 
           <a href="mailto:adarshmasekar@gmail.com">
             <div className="flex flex-col flex-shrink-0 items-center  space-y-2 justify-center">
-              <EnvelopeIcon className="flex  text-[#69C9C1] w-7 h-7 hover:animate-bounce" />
-              <h4 className="md:inline-flex text-[#69C9C1]/80 uppercase">email</h4>
-              <p className=" md:inline-flex hidden">adarshmasekar@gmail.com</p>
+              <EnvelopeIcon className="flex  text-primary w-7 h-7 hover:animate-bounce" />
+              <h4 className="md:inline-flex text-primary/90 uppercase">email</h4>
+              <p className=" md:inline-flex hidden text-[#f98547]">adarshmasekar@gmail.com</p>
             </div>
           </a>
 
               <a href="https://github.com/adarshmasekar">
           <div className="flex flex-col flex-shrink-0 items-center space-y-2 justify-center">
-            <CodeBracketIcon className="flex  text-[#69C9C1] w-7 h-7 hover:animate-bounce" />
-            <h4 className="md:inline-flex text-[#69C9C1]/80 uppercase">github</h4>
-            <p className=" md:inline-flex text-start hidden">
+            <CodeBracketIcon className="flex  text-primary w-7 h-7 hover:animate-bounce" />
+            <h4 className="md:inline-flex text-primary/90 uppercase">github</h4>
+            <p className=" md:inline-flex text-start hidden text-[#f98547]">
             https://github.com/AdarshMasekar/
             </p>
           </div>
@@ -106,7 +106,7 @@ const Contact = (props: Props) => {
         </div>
 
       
-        <h3 className=" uppercase tracking-[5px] text-xs text-[#69C9C1]/80">
+        <h3 className=" uppercase pt-2 tracking-[5px] text-xs text-primary/90">
         I AM VERY <span className="text-lg text-[#f88f3e]"> RESPONSIVE</span>{" "} AND
         <span className="text-[#f98547] text-lg font-bold animate-pulse"> ALWAYS HAPPY
           
@@ -114,12 +114,12 @@ const Contact = (props: Props) => {
         </h3>
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col space-y-6 mx-auto sm:p-4 lg:w-[95%] md:w-[60%]"
+          className="flex flex-col space-y-6 mx-auto sm:p-4 lg:w-[95%] md:w-[90%]"
           >
     
             <input
               {...register("name")}
-              className="contactInput"
+              className="contactInput focus:text-primary/90 text-primary/90 "
               type="text"
               placeholder="Name"
               required
@@ -128,29 +128,29 @@ const Contact = (props: Props) => {
 
           <input
               {...register("email")}
-              className="contactInput"
+              className="contactInput focus:text-primary/90 text-primary/90  "
               type="email"
               placeholder="Email"
               required
             />
           <input
             {...register("subject")}
-            className="contactInput"
+            className="contactInput focus:text-primary/90 text-primary/90   "
             type="text"
             placeholder="Subject"
             required
           />
           <textarea
             {...register("message")}            
-            className="contactInput overflow-hidden resize-none"
+            className="contactInput focus:text-primary/90 text-primary/90   "
             placeholder="Write your message"
             maxLength={200}
             required
           />
           <button
             type="submit"
-            className="heroButton focus:bg-[#69C9C1]>
-            ] focus:text-[#fff] hover:  font-bold border-2 border-[#69C9C1]/60 text-[#69C9C1]/60 text-[16px]"
+            className="heroButton focus:bg-primary>
+            ] focus:text-secondary  font-bold border-2 border-secondary/90 text-third/70 text-[16px]"
           >
             send message
           </button>

@@ -3,15 +3,17 @@
 @tailwind utilities;
 
 @layer components {
+    
     .heroButton {
-        @apply px-4 py-2 m-1 border border-[#00ADB5]/10 
-        rounded-full uppercase text-sm tracking-widest text-[#00ADB5]/80 transition-all 
-        hover:border-[#00ADB5] hover:text-[#00ADB5] hover:animate-bounce
+        @apply px-4 py-2 m-1 bg-third/10 border border-primary/50 
+        rounded-full uppercase text-sm tracking-widest text-secondary/80 transition-all 
+        hover:border-primary hover:text-secondary hover:animate-bounce
     }
     .contactInput {
-        @apply outline-none bg-[#EC9EC0]/20 rounded-3xl border-b border-[#66E1B4]/60 
-        focus:border-b-[#66E1B4] px-6 py-1 text-[#fff]/60 
-        placeholder-[#66E1B4]/60 transition-all 
-        focus:text-[#FFF] text-lg focus:bg-[#EC9EC0]/20
+        @apply outline-none bg-third/20 rounded-3xl border-b border-secondary/60 
+        focus:border-b-primary px-6 py-1 text-third/60 
+        placeholder-third/60 transition-all 
+        focus:text-third text-lg focus:bg-third/20
         }
 }
+

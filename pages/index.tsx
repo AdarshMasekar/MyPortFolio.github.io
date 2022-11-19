@@ -15,11 +15,12 @@ type section = {};
 const Home: NextPage = () => {
   return (
     <div
-    className="bg-[rgb(28,37,49)] text-white h-screen 
+    className="bg-[#11151c] text-white h-screen 
     snap-y snap-mandatory overflow-y-scroll overflow-x-hidden 
-    z-0 scrollbar-thin scrollbar-track-[#EC9EC0]/10 
-    scrollbar-thumb-[#69C9C1]/60 scrollbar-thumb-rounded"
+    z-0 scrollbar-thin scrollbar-track-secondary/10 
+    scrollbar-thumb-primary/20 scrollbar-thumb-rounded"
     >
+  
       <Head>
         <title>Adarsh Masekar Portfolio</title>
       </Head>
@@ -53,7 +54,7 @@ const Home: NextPage = () => {
       <Link href="#hero">
         <footer>
         <ChevronDoubleUpIcon
-            className="fixed bg-transparent text-[#4bb1d3]/20 hover:text-[#4bb1d3] animate-bounce w-10 h-10
+            className="fixed bg-transparent text-[#E45826]/20 hover:text-[#E45826] animate-bounce w-10 h-10
             bottom-[1%] right-[5%] cursor-pointer z-100"
           />
         </footer>

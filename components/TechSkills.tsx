@@ -22,14 +22,14 @@ const TechSkills = (props: Props) => {
       
       className="flex relative flex-col text-center md:text-left xl:flex-row 
     max-w-[1500px] xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto 
-    items-center"
+    items-center snap-mandatory"
     >
-      <h3 className="uppercase absolute top-24 font-bold tracking-[20px] text-2xl text-[#69c9c1]">
+      <h3 className="uppercase absolute top-24 font-bold tracking-[20px] text-2xl text-primary">
         tech stacks
       </h3>
-      <h3 className="absolute top-36 uppercase mb-0 tracking-[5px] text-xs text-[#69c9c1]/70">
+      <h3 className="absolute top-36 uppercase mb-0 tracking-[5px] text-xs text-secondary/70">
         hover over a{" "}
-        <span className="text-[#ff952b] text-lg font-semibold animate-pulse">
+        <span className="text-third text-lg font-semibold animate-pulse">
           skill
         </span>{" "}
         for currency proficiency

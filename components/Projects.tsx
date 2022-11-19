@@ -21,14 +21,14 @@ const Projects = (props: Props) => {
     }} 
       className="h-screen relative flex overflow-hidden 
     flex-col text-center md:flex-row max-w-full 
-    justify-evenly mx-auto items-center z-0"
+    justify-evenly mx-auto items-center z-0 snap-mandatory"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] font-bold text-[#69C9C1] text-2xl">
+      <h3 className="absolute top-24 uppercase tracking-[20px] font-bold text-primary text-2xl">
         Projects
       </h3>
-      <h3 className="absolute z-50 top-36 uppercase tracking-[5px] text-xs text-[#1e9d93]">
+      <h3 className="absolute z-50 top-36 uppercase tracking-[5px] text-xs text-secondary">
         use arrow keys or swipe on a{" "}
-        <span className="text-[#f98547] text-lg font-bold animate-pulse">
+        <span className="text-third text-lg font-bold animate-pulse">
           mockup
         </span>{" "}
         for demo projects
@@ -71,7 +71,8 @@ const Projects = (props: Props) => {
                 }}
                 viewport={{
                   once: true,
-                }}
+                }} 
+                className="text-[#fff]"
                 src="https://www.freeiconspng.com/uploads/responsive-icon-1.png"
                 width="350"
                 alt="Photos Icon Responsive"
@@ -81,14 +82,14 @@ const Projects = (props: Props) => {
               {/* <a href="https://github.com/AdarshMasekar/Bus-Ticket-Reservation-/tree/main/Project" className=" heroButton btn  border rounded-full p-2" role="button">Source Code</a> */}
               <button className="heroButton"><a href="https://github.com/AdarshMasekar/Bus-Ticket-Reservation-/tree/main/Project">Source code</a></button>
               <button className="heroButton"><a href="https://github.com/AdarshMasekar/Bus-Ticket-Reservation-/tree/main/Project">live demo</a></button>
-              <h4 className="uppercase text-lg text-[#1e9d93] tracking-[2px]">
+              <h4 className="uppercase text-lg text-primary tracking-[2px]">
                 case study :
                 <span className="uppercase text-xl font-semibold text-[#f98547] animate-pulse">
                   {" "}
                   Android App
                 </span>
               </h4>
-              <p className="text-[16px] px-2 tracking-wider">
+              <p className="text-[16px] px-2 tracking-wider text-third/70">
                 Android Application developed using java and xml it is basically a clone app for online ticket booking
               </p>
             </div>
@@ -96,15 +97,15 @@ const Projects = (props: Props) => {
         ))}
       </motion.div>
 
-      <div className="w-full absolute top-[28%] bg-gradient-to-r from-[#69C9C1] via-[#1e9d93]/70 to-[#55ff9c] left-0 h-[4px] -skew-y-12 animate-pulse " />
-      <div className="w-full absolute top-[29%] bg-gradient-to-r from-[#55ff9c] via-[#1e9d93]/70 to-[#1e9d93] left-0 h-[3px] -skew-y-12 " />
-      <div className="w-full absolute top-[30%] bg-gradient-to-r from-[#69C9C1] via-[#1e9d93]/70 to-[#55ff9c] left-0 h-[2px] -skew-y-12 " />
-      <div className="w-full absolute top-[31%] bg-gradient-to-r from-[#69C9C1] via-[#1e9d93]/70 to-[#1e9d93] left-0 h-[1px] -skew-y-12 " />
+      <div className="w-full absolute top-[28%] bg-gradient-to-r from-secondary via-third/70 to-secondary left-0 h-[4px] -skew-y-6 animate-pulse z-0 " />
+      <div className="w-full absolute top-[29%] bg-gradient-to-r from-secondary via-third/70 to-secondary left-0 h-[3px] -skew-y-6 z-0" />
+      <div className="w-full absolute top-[30%] bg-gradient-to-r from-secondary via-third/70 to-secondary left-0 h-[2px] -skew-y-6 z-0" />
+      <div className="w-full absolute top-[31%] bg-gradient-to-r from-secondary via-third/70 to-secondary left-0 h-[2px] -skew-y-6 animate-pulse z-0" />
 
-      <div className="w-full absolute bottom-[10%] bg-gradient-to-r from-[#1e9d93] via-[#1e9d93]/70 to-[#69C9C1] left-0 h-[4px] -skew-y-12 animate-pulse" />
-      <div className="w-full absolute bottom-[11%] bg-gradient-to-r from-[#1e9d93] via-[#55ff9c]/70 to-[#69C9C1] left-0 h-[3px] -skew-y-12" />
-      <div className="w-full absolute bottom-[12%] bg-gradient-to-r from-[#55ff9c] via-[#1e9d93]/70 to-[#69C9C1] left-0 h-[2px] -skew-y-12" />
-      <div className="w-full absolute bottom-[13%] bg-gradient-to-r from-[#1e9d93] via-[#55ff9c]/70 to-[#69C9C1] left-0 h-[1px] -skew-y-12" />
+      <div className="w-full absolute bottom-[10%] bg-gradient-to-r from-secondary via-third/70 to-thid left-0 h-[4px] -skew-y-6 animate-pulse z-0" />
+      <div className="w-full absolute bottom-[11%] bg-gradient-to-r from-secondary via-third/70 to-secondary left-0 h-[3px] -skew-y-6 z-0" />
+      <div className="w-full absolute bottom-[12%] bg-gradient-to-r from-secondary via-third/70 to-secondary left-0 h-[2px] -skew-y-6 z-0" />
+      <div className="w-full absolute bottom-[13%] bg-gradient-to-r from-secondary via-third/70 to-secondary left-0 h-[2px] -skew-y-6 animate-pulse z-0" />
     </motion.div>
   );
 };

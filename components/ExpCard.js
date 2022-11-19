@@ -5,21 +5,10 @@ import { motion } from "framer-motion";
 
 function ExpCard({role,company,cmplogo,duration,tech1,tech2,tech3,task1,task2,task3,task4}){
   return (
-    <motion.article
-    initial={{
-      opacity: 0,
-      // x:-500
-    }}
-    whileInView={{
-      opacity: 1,
-      // x:0
-    }}
-    transition={{
-      duration: 1,ease:"circInOut"
-    }} 
-      className="text-center flex flex-col rounded-lg sm:rounded-lg md:rounded-lg items-center space-y-7 
+    <article
+      className="text-center  hover:opacity-100 opacity-40 flex flex-col rounded-2xl sm:rounded-2xl md:rounded-2xl items-center space-y-7 
       flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center
-      bg-[#EC9EC0]/20 p-10 hover:opacity-100 opacity-40
+      bg-third/20 p-10 
       cursor-pointer transition-opacity duration-200 overflow-hidden mt-[140px]"
     >
       <motion.img
@@ -43,8 +32,8 @@ function ExpCard({role,company,cmplogo,duration,tech1,tech2,tech3,task1,task2,ta
       />
 
       <div className="px-4 sm:mx-2 md:px-10">
-        <h4 className="text-xl px-4 font-bold tracking-wider text-[#ff7733]  animate-pulse hover:animate-none">{role}</h4>
-        <p className="font-semibold text-sm mt-1 text-[#69C9C1]/80">
+        <h4 className="text-xl px-4 font-bold tracking-wider text-primary  animate-pulse hover:animate-none">{role}</h4>
+        <p className="font-semibold text-sm mt-1 text-secondary/80">
           {company}
         </p>
         <picture className="flex space-x-2 my-2 items-center justify-center">
@@ -63,11 +52,11 @@ function ExpCard({role,company,cmplogo,duration,tech1,tech2,tech3,task1,task2,ta
           />
         </picture>
 
-        <p className=" py-2 text-sm text-[#69C9C1]">
+        <p className=" py-2 text-sm text-secondary">
           {duration}
         </p>
 
-        <ul className="list-disc space-y-4 ml-5 text-sm text-left px-10 ">
+        <ul className="list-disc space-y-4 ml-5 text-third text-sm text-left px-10 ">
           <li>
             {task1}
           </li>
@@ -82,7 +71,7 @@ function ExpCard({role,company,cmplogo,duration,tech1,tech2,tech3,task1,task2,ta
           </li>
         </ul>
       </div>
-    </motion.article>
+    </article>
   );
 };
 
