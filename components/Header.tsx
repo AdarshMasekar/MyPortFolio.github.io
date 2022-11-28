@@ -13,26 +13,26 @@ function Header({}: Props) {
         className="flex flex-row items-center "
       >
         <SocialIcon
-       className=' opacity-75 hover:opacity-100 hover:animate-bounce hover:shadow-green-300  rounded-full'
+       className=' opacity-75 hover:opacity-100 hover:scale-125 hover:shadow-green-300  rounded-full'
           url="https://www.github.com/AdarshMasekar"
           fgColor={colors.secondary}
           bgColor="transparent"
         />
         <SocialIcon
-       className=' opacity-75 hover:opacity-100 hover:animate-bounce  hover:shadow-green-300  rounded-full'
+       className=' opacity-75 hover:opacity-100 hover:scale-x-125  hover:shadow-green-300  rounded-full'
           url="https://www.linkedin.com/in/adarsh-masekar-826a2423a/"
           fgColor={colors.secondary}
           bgColor="transparent"
         />
         <SocialIcon
-          className=' opacity-75 hover:opacity-100 hover:animate-bounce  hover:shadow-green-300  rounded-full'
+          className=' opacity-75 hover:opacity-100 hover:scale-125  hover:shadow-green-300  rounded-full'
           url='https://leetcode.com/adarshmasekar/'
            fgColor= {colors.secondary}
            bgColor='transparent'
            />
        
         <SocialIcon
-        className=' opacity-75 hover:opacity-100 hover:animate-bounce hover:shadow-green-300  rounded-full'
+        className=' opacity-75 hover:opacity-100 hover:scale-125 hover:shadow-green-300  rounded-full'
            url='https://www.facebook.com/adarsh.masekar.55'
            fgColor= {colors.secondary}
            bgColor='transparent'
@@ -44,7 +44,7 @@ function Header({}: Props) {
           className="flex flex-row items-center text-gray-300"
         >
           <SocialIcon          
-            className="cursor-pointer hover:animate-bounce"
+            className="cursor-pointer hover:scale-125"
             network="email"
             fgColor={colors.secondary}
             bgColor="transparent"
