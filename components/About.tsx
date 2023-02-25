@@ -5,6 +5,7 @@ import "../styles/Home.module.css"
 type Props = {};
 
 const About = (props: Props) => {
+  const underline = "#F7C8E0"
   return (
     <motion.div
     initial={{
@@ -38,7 +39,7 @@ const About = (props: Props) => {
         }} 
        src="https://avatars.githubusercontent.com/u/108608608?v=4"
         alt=""
-        className="opacity-80 mt-32 md:mb-0 flex-shrink-0 w-[150px] h-[150px] rounded-full object-cover md:rounded-md md:w-[300px] md:h-[400px] xl:w-[500px] xl:h-400px] my-10 sm:rounded-full sm:w-[250px] sm:h-[250px]"
+        className="opacity-80 xs:mt-52 sm:mt-32 md:mb-0  flex-shrink-0 w-[150px] h-[150px] rounded-full object-cover md:rounded-[20px] md:border-third md:border-2 md:w-[300px] md:h-[400px] xl:w-[500px] xl:h-400px] my-10 sm:rounded-full xs:w-[200px] xs:h-[200px]"
       />
 
       <motion.div
@@ -55,23 +56,24 @@ const About = (props: Props) => {
         duration: 1,
         ease:"easeInOut"
       }}
-      // viewport={{
-      //   once: true,
-      // }}
-       className="lg:mt-32  flex flex-col space-y-10 px-0 sm:my-3 md:px-10">
-        <h4 className="text-secondary text-[18px] font-bold uppercase tracking-[10px] hover:">
+      viewport={{
+        once: true,
+      }}
+       className="lg:mt-32 flex flex-col space-y-8  px-0 sm:my-0 md:px-10">
+        <h4 className="text-secondary sm:text-[15px] md:text-[17px] lg:text-[18px] font-bold uppercase tracking-[10px] md:mt-28 lg:-mt-10">
           Get to{" "}
           <span className="text-primary text-2xl font-semibold animate-pulse">
             know
           </span>{" "}
           me
         </h4>
-        <hr color="pink" />
-        <p className="text-lg tracking-widest leading-8 text-third ">
-          I&apos;m a Graduate student from <span className="branch text-secondary" id="branch">Computer Science and Engineering </span>, My current <span className="text-semibold text-secondary/90">CGPA</span> is <span className="text-bolder text-secondary">8.3. </span>
-          I have done Internship in <span className="text-semibold text-secondary">Datascience</span>,
-          My Technical skills include <span className="text-semi-bold text text-secondary"> Python, C++, HTML/CSS, REACT</span> etc.
-          I have Been active on  <span className="text-bold text-xl text-secondary"><a href="https://leetcode.com/adarshmasekar/">Leetcode</a> </span> and <span className="text-bold text-xl text-secondary"> <a href="https://www.codingninjas.com/codestudio/profile/Adarsh_55">Coding Ninjas</a></span> platforms for practicing problem solving skills and enhancing how to use my <span className="text-semibold text-secondary/90">DSA</span> knowledge in realworld .
+        <hr color="white" className="w-100 text-primary h-[8px"/>
+        <p className="tracking-widest leading-8 text-third xs:text-[0.8rem] md:text-lg ">
+          I&apos;m a  <span className="text-underline">2023 </span>batch Graduate student from <span className="branch text-underline" id="branch">Computer Science and Engineering </span>, My current <span className="text-semibold text-primary/90">CGPA</span> is <span className="text-bolder text-primary">8.5. </span>
+          I have done Internship in <span className="text-semibold text-underline">Datascience</span>,
+          My Technical skills include <span className="text-semi-bold text text-underline"> C++, Python, HTML/CSS, REACT, Java</span> etc.
+          I have Been active on  <span className="text-bold text-xl text-underline"><a href="https://leetcode.com/adarshmasekar/">Leetcode</a> </span> and <span className="text-bold text-xl text-underline"> <a href="https://www.codingninjas.com/codestudio/profile/Adarsh_55">Coding Ninjas</a></span>
+           platforms for practicing problem solving skills and enhancing how to use my <span className="text-semibold text-underline/90">DSA</span> knowledge in realworld .
         </p>
       </motion.div>
       

@@ -106,7 +106,7 @@ const Contact = (props: Props) => {
         </div>
 
       
-        <h3 className=" uppercase pt-2 tracking-[5px] text-xs font-bold text-primary/90">
+        <h3 className=" uppercase pt-2 tracking-[5px] text-sm font-bold text-primary/90">
         I AM VERY <span className="text-lg text-secondary"> RESPONSIVE</span>{" "} AND
         <span className="text-secondary text-lg font-bold animate-pulse"> ALWAYS HAPPY
           

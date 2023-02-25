@@ -1,37 +1,32 @@
-import Link from "next/link";
 import React from "react";
+import { SocialIcon } from "react-social-icons";
+import {colors} from "./colors"
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircle";
 import {motion} from "framer-motion"
 
 
-
-type Props = {};
-
-
-const Hero = ({}: Props) => {
+const Hero = () => {
 
 
-  const [text, count] = useTypewriter({
+  const [text] = useTypewriter({
     words: [
       "{{ React, Next, TypeScript }}",
       'console.log("Hello World")',
       "<WebDeveloper />",
-      "<FrontendEngineer />",
+      "<Frontend Engineer />",
     ],
     loop: true,
-    delaySpeed: 4000,
+    delaySpeed: 5000,
   });
 
   return (
     <motion.div
     initial={{
       opacity: 0,
-      // x:-500
     }}
     whileInView={{
       opacity: 1,
-      // x:0
     }}
     transition={{
       duration: 1,ease:"circInOut"
@@ -40,13 +35,13 @@ const Hero = ({}: Props) => {
       <BackgroundCircles />
       <picture>
         <img
-          className="relative rounded-full h-52 w-52 mx-auto object-cover opacity-70"
+          className="relative rounded-full h-52 w-52 mx-auto object-cover opacity-100 top-8 border-primary border-2 shadow-lg shadow-primary  "
           src="https://avatars.githubusercontent.com/u/108608608?v=4"
           alt="AdarshMasekar_profile_pic"
         />
       </picture>
-      <div className="z-20">
-        <h2 className="text-2xl uppercase font-bold text-primary ml-2 mb-2 pb-4 tracking-[8px]">
+      <div className=" relative z-20 top-6">
+        <h2 className="text-2xl uppercase font-bold text-primary ml-2 mb-2 pb-4 tracking-[8px] ">
           Adarsh Masekar
         </h2>
 
@@ -55,22 +50,45 @@ const Hero = ({}: Props) => {
           <Cursor cursorColor="#8faeb2" />
         </h1>
 
-        <div className="pt-12 xs:px-10">
-          <Link href="#about">
-            <button className="heroButton">About</button>
-          </Link>
-          <Link href="#Techskills">
-            <button className="heroButton">tech stacks</button>
-          </Link>
-          <Link href="#experience">
-            <button className="heroButton ">Experience</button>
-          </Link>
-         
-          <Link href="#projects">
-            <button className="heroButton ">Projects</button>
-          </Link>
-          <a href="https://drive.google.com/file/d/1oogUAmXvz_1t88VXw-9DsiucvwKy_RXF/view?usp=share_link" className="heroButton">Resume</a>
+        <div className="social-icons   relative top-12">
+        <SocialIcon          
+            className="cursor-pointer hover:scale-110 mr-3 bg-third/20 shadow-primary/60  shadow-md  rounded-full "
+            network="github"
+            fgColor={colors.secondary}
+            bgColor="transparent"
+            url="https://github.com/AdarshMasekar"
+          />
+           <SocialIcon          
+            className="cursor-pointer hover:scale-110 mr-3 bg-third/20 shadow-primary/60  shadow-md  rounded-full"
+            network="linkedin"
+            fgColor={colors.secondary}
+            bgColor="transparent"
+            url="https://www.linkedin.com/in/adarsh-masekar-826a2423a/"
+          />
+          <SocialIcon          
+            className="cursor-pointer hover:scale-110 mr-3 bg-third/20 shadow-primary/60  shadow-md  rounded-full"
+            network="instagram"
+            fgColor={colors.secondary}
+            bgColor="transparent"
+            url="https://instagram.com/adarsh_masekar?igshid=NTE5MzUyOTU="
+          />
+          <SocialIcon          
+            className="cursor-pointer hover:scale-110 mr-3 bg-third/20 shadow-primary/60  shadow-md  rounded-full"
+            network="facebook"
+            fgColor={colors.secondary}
+            bgColor="transparent"
+            url="https://www.facebook.com/adarsh.masekar.55?mibextid=ZbWKwL"
+            />
+
+          <span className="relative resume top-2" title="Resume">
+          <a className="resume" href="https://drive.google.com/file/d/19ka5FZQulybDoNthj5hBg0IOP7jbnh0w/view?usp=sharing" download="Adarsh_Masekar's_resume">
+          <i className="ri-download-line text-2xl text-primary p-3 bg-third/20 shadow-primary/60  shadow-md  rounded-full"></i>
+          </a>
+           
+             </span>
         </div>
+          
+        
       </div>
     </motion.div>
   );

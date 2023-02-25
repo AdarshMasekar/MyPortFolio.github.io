@@ -1,62 +1,37 @@
 import React from "react";
-import { SocialIcon } from "react-social-icons";
-import Link from "next/link";
-import {colors} from "./colors"
-
+import {navlink} from "../utils/navlinks.js";
+import Link from "next/link.js";
 type Props = {};
 
 function Header({}: Props) {
+  
   return (
-    <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
-      <div
-        
-        className="flex flex-row items-center "
-      >
-        <SocialIcon
-       className=' opacity-75 hover:opacity-100 hover:scale-125 hover:shadow-green-300  rounded-full'
-          url="https://www.github.com/AdarshMasekar"
-          fgColor={colors.secondary}
-          bgColor="transparent"
-        />
-        <SocialIcon
-       className=' opacity-75 hover:opacity-100 hover:scale-x-125  hover:shadow-green-300  rounded-full'
-          url="https://www.linkedin.com/in/adarsh-masekar-826a2423a/"
-          fgColor={colors.secondary}
-          bgColor="transparent"
-        />
-        <SocialIcon
-          className=' opacity-75 hover:opacity-100 hover:scale-125  hover:shadow-green-300  rounded-full'
-          url='https://leetcode.com/adarshmasekar/'
-           fgColor= {colors.secondary}
-           bgColor='transparent'
-           />
-       
-        <SocialIcon
-        className=' opacity-75 hover:opacity-100 hover:scale-125 hover:shadow-green-300  rounded-full'
-           url='https://www.facebook.com/adarsh.masekar.55'
-           fgColor= {colors.secondary}
-           bgColor='transparent'
-           />
-      </div>
-      <Link href="#contact">
-        <div
-    
-          className="flex flex-row items-center text-gray-300"
-        >
-          <SocialIcon          
-            className="cursor-pointer hover:scale-125"
-            network="email"
-            fgColor={colors.secondary}
-            bgColor="transparent"
-          />
-          <p
-            className="uppercase hidden md:inline-flex text-[16px]
-            text-secondary cursor-pointer animate-pulse hover:animate-none"
-          >
-            Get in touch
-          </p>
+    <header className="navbar sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
+      <a href="#hero">
+        <h2 className="header-logo text-2xl cursor-pointer uppercase font-bold text-primary tracking-[4px] border-b-underline ">
+        Adarsh
+        </h2>
+      </a>
+
+      <div className="navbar--links">
+        <div className="flex flex-row items-center text-gray-300">
+            <div className=" nav-links pl-10">
+              {
+                navlink.map(item=>(
+                  <Link href={item.href}>
+                  <button  className="heroButton active:text-primary" key={item.id}>{item.link}</button>
+                </Link>
+                ))
+              }
+
+            </div>
         </div>
-      </Link>
+     
+
+      </div>
+      <div className="mobile-Menu  text-primary font-bold text-2xl">
+        <span><i className="ri-menu-line" ></i></span>
+      </div>
     </header>
   );
 }

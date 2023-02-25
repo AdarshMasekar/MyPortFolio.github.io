@@ -17,7 +17,7 @@ function Skills({tech,lvl,stack}) {
     }} 
      className="group relative flex cursor-pointer">
     <img
-      className="rounded-full border-[2px] border-secondary/80
+      className="rounded-full border-[2px] border-primary/80
       object-cover p-2 w-20 h-20 md:w-20 md:h-20 xl:w-24 xl:h-24
       filter group-hover:grayscale grayscale-0 
       transition duration-400 ease-in-out group-hover:animate-bounce"

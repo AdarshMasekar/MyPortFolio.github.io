@@ -1,10 +1,20 @@
 import React from "react";
 import { motion } from "framer-motion";
-import ExpCard from "./ExpCard.js";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import {experience} from "../utils/expereince"
 
-type Props = {};
+const Experience = () => {
+  const settings ={
+    infinite:true,
+    slidesToShow:1,
+    slidesToScroll:-1,
+    autoplay:true,
+    autoplaySpeed:4000,
+    speed:3000
+  };
 
-const Experience = (props: Props) => {
   return (
     <motion.div
       initial={{
@@ -18,8 +28,8 @@ const Experience = (props: Props) => {
       transition={{
         duration: 1,
       }} 
-      className="flex relative overflow-hidden flex-col text-center
-      md:flex-row max-w-full px-10 h-screen justify-evenly mx-auto items-center snap-mandatory"
+      className="h-screen relative flex flex-col text-center
+      max-w-7xl  px-10 mx-auto items-center justify-evenly"
     >
       <h3 className="absolute top-24 uppercase font-bold tracking-[20px] text-2xl text-primary">
         Experience
@@ -40,14 +50,71 @@ const Experience = (props: Props) => {
     transition={{
       duration: 1,ease:"easeIn"
     }}
-     className="w-full my-0 mx-auto  flex space-x-20 overflow-x-scroll p-10
+     className="w-full my-0 mx-auto h-screen flex space-x-20 overflow-x-auto p-10
       snap-x snap-mandatory 
-      scrollbar-thin scrollbar-track-[#EC9EC0]/10 scrollbar-thumb-primary/20 scrollbar-thumb-rounded">
-        
-        <ExpCard  cmplogo="https://technologics.in/wp-content/uploads/2020/10/TECHNOLOGICS-LOGO.png" role="Datascience Intern" company="Technologics global private limited" duration="27-08-2022 to 27-09-2022" tech1="https://seeklogo.com/images/N/numpy-logo-479C24EC79-seeklogo.com.png" tech2="https://seeklogo.com/images/P/pandas-logo-776F6D45BB-seeklogo.com.png?v=637737823900000000" tech3="https://seeklogo.com/images/M/matplotlib-logo-7676870AC0-seeklogo.com.png" task1="Learnt Python Libraries like Numpy Pandas Seaborn etc" task2="Done Projects on Face Mask Detection " task3="Done Project on Titanic Dataset" task4="Done Analyisis on IPL Dataset" />
-        <ExpCard  cmplogo="https://seeklogo.com/images/F/flag-of-the-japan-self-defense-forces-logo-722812237B-seeklogo.com.png" role="Web Development" company="Course by Angela Yu" duration="20-10-2022 to present" tech1="https://cdn-icons-png.flaticon.com/512/1260/1260667.png" tech2="https://cdn-icons-png.flaticon.com/512/174/174854.png" tech3="https://cdn-icons-png.flaticon.com/512/732/732190.png" task1="Learnt HTML/CSS Javascript Bootstrap Tailwind  Reactjs Typescript " task2="Done Project on Simple Landing page " task3="Done Project on Simple Login Page" task4="Learning Backend Technologies Like MongoDB"/>
-       
-      </motion.div>
+      
+      ">
+        <Slider
+        {...settings} className="relative slider z-20 flex align-middle justify-items-center  ">
+        {experience.map(({role,company,cmlogo,duration,techstack,tasks}) => (
+
+          <div
+          className="exp--card text-center  hover:opacity-100 opacity-80 flex flex-col rounded-2xl sm:rounded-2xl md:rounded-2xl items-center space-y-7 
+          flex-shrink-0  snap-center
+          bg-third/20 p-10    cursor-pointer transition-opacity duration-200 overflow-hidden mt-[140px]" >
+          <motion.img
+            initial={{
+              y: -100,
+              opacity: 0,
+            }}
+            transition={{
+              duration: 1.2,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            viewport={{
+              once: true,
+            }}
+            src={cmlogo}
+            className="expimg w-20 h-20 rounded-full md:rounded-full relative xs:left-[25%] sm:left-[40%] lg:left-[44%] object-cover object-center "
+            alt=""
+          />
+
+          <div className="exp--details px-4 xs:mx-0 md:px-10">
+            <h4 className="text-xl px-4 font-bold tracking-wider text-primary  animate-pulse hover:animate-none">{role}</h4>
+            <p className="font-semibold text-sm mt-1 text-secondary/80">
+              {company}
+            </p>
+            
+            <picture className="flex space-x-2  my-2 items-center justify-center">
+              {techstack.map(item=>(
+              <div className="mx-2">
+                 <h2 className="text-primary  capitalize">{item}</h2>
+              </div>
+              ))}
+            </picture>
+
+            <p className=" py-2 text-sm text-secondary">
+              {duration}
+            </p>
+
+            <picture className="flex space-x-2  my-2 items-center justify-center">
+            
+            <h2 className="text-primary xs:hidden bg-Bg p-4 rounded-lg sm:block">
+              Projects</h2>{tasks.map(item=>(
+              <div className="mx-2">
+                 <h2 className="text-secondary bg-Bg p-4 rounded-md  capitalize">{item}</h2>
+              </div>
+              ))}
+            </picture>
+            
+          </div>
+          </div>
+        ))}
+        </Slider>
+       </motion.div>
       
     </motion.div>
   );
