@@ -17,7 +17,7 @@ const BackgroundCircles = (props: Props) => {
       transition={{
         duration: 5,
       }}
-      className="relative circle top-[130px] flex items-center justify-center">
+      className="relative circle top-[130px] xl:top-[144px] flex items-center justify-center">
       <div className="absolute border-[190px] border-third/20 rounded-full h-[0] w-[0] mt-52 opacity-20 animate-spin " />
       <div className="absolute border-[350px] border-third/20 rounded-full h-[0] w-[0] mt-52 opacity-20 animate-spin " />
 

@@ -30,7 +30,6 @@
     }
 
     .project--card{
-        /* background-color: red; */
         width: 200px;
         height: 500px;
         display: flex;
@@ -44,13 +43,13 @@
         box-shadow: 5px 5px 10px 4px #F3A49F;
     }
     .slider{
-        @apply xs:w-[230px] xs:h-[40rem] xs:top-32   
+        @apply xs:w-[230px] xs:h-[40rem] xs:top-32 
         md:w-[30rem] md:h-[40rem] md:top-32 md:left-16
-        lg:w-[50rem] lg:h-[40rem] lg:top-32 lg:left-44
-        xl:w-[50rem] xl:h-[35rem] xl:top-32 xl:left-44 
+        lg:w-[70%] lg:h-[40rem] lg:top-32 lg:left-44
+        xl:w-[70%] xl:h-max xl:top-32 xl:left-44 
         }
 
-        .slider2{
+    .slider2{
             @apply relative
             xs:w-72 xs:h-96 xs:left-14
             md:w-[75%] md:h-[28rem] md:left-24

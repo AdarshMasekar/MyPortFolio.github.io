@@ -1,6 +1,6 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
-import {colors} from "./colors"
+import {colors} from "../utils/colors"
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircle";
 import {motion} from "framer-motion"
@@ -35,13 +35,13 @@ const Hero = () => {
       <BackgroundCircles />
       <picture>
         <img
-          className="relative rounded-full h-52 w-52 mx-auto object-cover opacity-100 top-8 border-primary border-2 shadow-lg shadow-primary  "
+          className="relative rounded-full h-52 w-52 mx-auto object-cover opacity-100 top-8 xl:top-10 border-primary border-2 shadow-lg shadow-primary  "
           src="https://avatars.githubusercontent.com/u/108608608?v=4"
           alt="AdarshMasekar_profile_pic"
         />
       </picture>
       <div className=" relative z-20 top-6">
-        <h2 className="text-2xl uppercase font-bold text-primary ml-2 mb-2 pb-4 tracking-[8px] ">
+        <h2 className="text-2xl uppercase font-bold text-primary ml-2 mb-2 pb-4 tracking-[8px] xl:top-2">
           Adarsh Masekar
         </h2>
 
@@ -50,7 +50,7 @@ const Hero = () => {
           <Cursor cursorColor="#8faeb2" />
         </h1>
 
-        <div className="social-icons   relative top-12">
+        <div className="social-icons relative top-12 lg:top-12 xl:top-16">
         <SocialIcon          
             className="cursor-pointer hover:scale-110 mr-3 bg-third/20 shadow-primary/60  shadow-md  rounded-full "
             network="github"

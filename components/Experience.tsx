@@ -83,7 +83,7 @@ const Experience = () => {
           />
 
           <div className="exp--details px-4 xs:mx-0 md:px-10">
-            <h4 className="text-xl px-4 font-bold tracking-wider text-primary  animate-pulse hover:animate-none">{role}</h4>
+            <h4 className="xs:text-lg sm:text-xl px-4 font-bold tracking-wider text-primary xs:text-start sm:text-center    animate-pulse hover:animate-none">{role}</h4>
             <p className="font-semibold text-sm mt-1 text-secondary/80">
               {company}
             </p>
