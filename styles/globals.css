@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+    .heroButton {
+        @apply px-2 py-1 m-1 font-bold bg-text-base/10 border border-primary/80 rounded-full uppercase text-sm tracking-widest text-secondary transition-all hover:border-primary hover:border-2 hover:text-secondary hover:scale-105 hover:mx-1
+    }
+    .contactInput {
+        @apply outline-none bg-third/20 rounded-3xl border-b border-secondary/60 focus:border-b-primary px-6 py-1 text-third/60 placeholder-third/60 transition-all focus:text-third text-lg focus:bg-third/20
+    }
+    .navbar {
+        @apply bg-Bg
+    }
+    .header-logo{
+        
+        @apply border-b-2 border-b-Bg
+    }
+    .resume{
+        @apply hover:scale-110
+    }
+    .mobile-Menu {
+        @apply  xs:block sm:block md:block lg:hidden
+    }
+
+    .navbar--links{
+        @apply xxs:hidden xs:hidden  sm:hidden md:hidden lg:block  
+    }
+    .circle{
+        top: 38px;
+    }
+
+    .project--card{
+        /* background-color: red; */
+        width: 200px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .img{
+        border: 1px solid #3c3c3cd3;
+        box-shadow: 5px 5px 10px 4px #F3A49F;
+    }
+    .slider{
+        @apply xs:w-[230px] xs:h-[40rem] xs:top-32   
+        md:w-[30rem] md:h-[40rem] md:top-32 md:left-16
+        lg:w-[50rem] lg:h-[40rem] lg:top-32 lg:left-44
+        xl:w-[50rem] xl:h-[35rem] xl:top-32 xl:left-44 
+        }
+
+        .slider2{
+            @apply relative
+            xs:w-72 xs:h-96 xs:left-14
+            md:w-[75%] md:h-[28rem] md:left-24
+            lg:w-[78%] lg:h-[28rem] lg:left-40 top-10
+            xl:w-[78%] xl:h-[28rem] xl:left-44 xl:top-10
+            }
+
+    
+
+    .project--details{
+        @apply relative sm:w-96 sm:h-80 sm:top-16
+        xs:w-72 xs:h-10 xs:top-28 xs:text-[15px]
+        md:w-60 md:h-40 md:top-6 md:-left-16 md:text-[15px]
+        lg:w-96 lg:h-80 lg:top-16 lg:left-10
+        xl:w-96 xl:h-80 xl:top-16 xl:left-10
+    }
+    .project--img{
+        @apply cursor-pointer relative flex 
+        md:w-64 md:h-60 md:top-20 md:left-14 md:float-right
+        lg:w-96 lg:h-80 lg:-top-32 lg:-left-10 lg:float-right
+        xl:w-96 xl:h-80 xl:-top-32 xl:-left-10 xl:float-right
+    }
+        
+    .exp--details{
+        @apply xs:text-[9px] sm:text-[14px] md:text-[16px] lg:text-[18px]
+    }
+    
+
+}
