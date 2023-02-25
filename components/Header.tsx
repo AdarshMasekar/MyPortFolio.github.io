@@ -18,7 +18,7 @@ function Header({}: Props) {
             <div className=" nav-links pl-10">
               {
                 navlink.map(item=>(
-                  <Link href={item.href}>
+                  <Link href={item.href} key={item.id}>
                   <button  className="heroButton active:text-primary" key={item.id}>{item.link}</button>
                 </Link>
                 ))

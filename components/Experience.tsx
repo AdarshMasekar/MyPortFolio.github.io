@@ -56,12 +56,12 @@ const Experience = () => {
       ">
         <Slider
         {...settings} className="relative slider z-20 flex align-middle justify-items-center  ">
-        {experience.map(({role,company,cmlogo,duration,techstack,tasks}) => (
+        {experience.map(({id,role,company,cmlogo,duration,techstack,tasks}) => (
 
           <div
           className="exp--card text-center  hover:opacity-100 opacity-80 flex flex-col rounded-2xl sm:rounded-2xl md:rounded-2xl items-center space-y-7 
           flex-shrink-0  snap-center
-          bg-third/20 p-10    cursor-pointer transition-opacity duration-200 overflow-hidden mt-[140px]" >
+          bg-third/20 p-10  cursor-pointer transition-opacity duration-200 overflow-hidden mt-[140px]" key={id}>
           <motion.img
             initial={{
               y: -100,
@@ -77,7 +77,7 @@ const Experience = () => {
             viewport={{
               once: true,
             }}
-            src={cmlogo}
+            src={cmlogo} key={id}
             className="expimg w-20 h-20 rounded-full md:rounded-full relative xs:left-[25%] sm:left-[40%] lg:left-[44%] object-cover object-center "
             alt=""
           />
@@ -90,7 +90,7 @@ const Experience = () => {
             
             <picture className="flex space-x-2  my-2 items-center justify-center">
               {techstack.map(item=>(
-              <div className="mx-2">
+              <div className="mx-2" key={id}>
                  <h2 className="text-primary  capitalize">{item}</h2>
               </div>
               ))}
@@ -103,8 +103,9 @@ const Experience = () => {
             <picture className="flex space-x-2  my-2 items-center justify-center">
             
             <h2 className="text-primary xs:hidden bg-Bg p-4 rounded-lg sm:block">
-              Projects</h2>{tasks.map(item=>(
-              <div className="mx-2">
+              Projects</h2>
+              {tasks.map(item=>(
+              <div className="mx-2" key={id}>
                  <h2 className="text-secondary bg-Bg p-4 rounded-md  capitalize">{item}</h2>
               </div>
               ))}

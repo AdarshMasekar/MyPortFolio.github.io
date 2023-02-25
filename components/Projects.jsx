@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import Slider from "react-slick";
 import {projects} from "../utils/projects.js";
+import Image from "next/image.js";
 
 
 const Projects = () => {
@@ -82,7 +83,7 @@ const settings = {
 
             <div className="project--img xs:hidden md:block ">
               <a href={project.demo}>
-                <img
+                <Image
                 className="text-[#fff] float-right relative top-[-9rem] img"
                 src={project.image} width={400} height={400}
                 alt="Photos Icon Responsive"
