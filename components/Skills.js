@@ -7,11 +7,9 @@ function Skills({tech,lvl,stack}) {
     <motion.div
     initial={{
       opacity: 0,
-      // x:-500
     }}
     whileInView={{
       opacity: 1,
-      // x:0
     }}
     transition={{
       duration: 1,ease:"circInOut"
@@ -19,11 +17,11 @@ function Skills({tech,lvl,stack}) {
      className="group relative flex cursor-pointer">
     <motion.img
       className="rounded-full border-[2px] border-primary/80
-      object-cover p-2 w-20 h20  xl:w-24 xl:h-24
+      object-cover p-2 w-20 h-20 md:w-20 md:h-20 xl:w-24 xl:h-24
       filter group-hover:grayscale grayscale-0 
       transition duration-400 ease-in-out group-hover:animate-bounce"
       src={tech}
-      alt="" 
+      alt=""
     />
     <div className="absolute rounded-full 
     h-20 w-20 md:w-22 md:h-22 xl:w-24 xl:h-24 

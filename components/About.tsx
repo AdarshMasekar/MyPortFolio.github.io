@@ -27,11 +27,9 @@ const About = (props: Props) => {
 
      <motion.img
         initial={{
-          
           x:-30
         }}
         whileInView={{
-         
           x:0
         }}
         transition={{
@@ -44,7 +42,7 @@ const About = (props: Props) => {
 
       <motion.div
        initial={{
-        x: 30,
+        x: 100,
         opacity:0
       }}
      
@@ -53,8 +51,8 @@ const About = (props: Props) => {
         opacity: 1,
       }}
       transition={{
-        duration: 1,
-        ease:"easeInOut"
+        duration: 1.3,
+        ease:"circIn"
       }}
       viewport={{
         once: true,

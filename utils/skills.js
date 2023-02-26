@@ -1,8 +1,9 @@
+
 export const skillset = [
 
     {
         id: 1,
-        tech: "https://cdn-icons-png.flaticon.com/512/6132/6132222.png",
+        tech:"https://cdn-icons-png.flaticon.com/512/6132/6132222.png" ,
         lvl: "90%",
         stack: "C++"
     },

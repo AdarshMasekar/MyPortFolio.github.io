@@ -15,11 +15,16 @@ export const navlink = [{
     },
     {
         id: 4,
+        link: "Experience",
+        href: "#experience"
+    },
+    {
+        id: 5,
         link: "Projects",
         href: "#projects"
     },
     {
-        id: 5,
+        id: 6,
         link: "Contact",
         href: "#contact"
     },
