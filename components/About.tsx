@@ -58,7 +58,7 @@ const About = (props: Props) => {
         once: true,
       }}
        className="lg:mt-32 flex flex-col space-y-8  px-0 sm:my-0 md:px-10">
-        <h4 className="text-secondary sm:text-[15px] md:text-[17px] lg:text-[18px] font-bold uppercase tracking-[10px] md:mt-28 lg:-mt-10">
+        <h4 className="text-secondary xs:text-[16px] sm:text-lg xl:text-lg font-bold uppercase tracking-[10px] md:mt-28 lg:-mt-10">
           Get to{" "}
           <span className="text-primary text-2xl font-semibold animate-pulse">
             know
@@ -66,7 +66,7 @@ const About = (props: Props) => {
           me
         </h4>
         <hr color="white" className="w-100 text-primary h-[8px"/>
-        <p className="tracking-widest leading-8 text-third xs:text-[0.8rem] md:text-lg ">
+        <p className="tracking-widest leading-8 text-third xs:text-lg md:text-lg ">
           I&apos;m a  <span className="text-underline">2023 </span>batch Graduate student from <span className="branch text-underline" id="branch">Computer Science and Engineering </span>, My current <span className="text-semibold text-primary/90">CGPA</span> is <span className="text-bolder text-primary">8.5. </span>
           I have done Internship in <span className="text-semibold text-underline">Datascience</span>,
           My Technical skills include <span className="text-semi-bold text text-underline"> C++, Python, HTML/CSS, REACT, Java</span> etc.

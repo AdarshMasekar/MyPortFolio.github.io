@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import React from "react";
 import Slider from "react-slick";
 import {projects} from "../utils/projects.js";
-import Image from "next/image.js";
 
 
 const Projects = () => {
@@ -49,12 +48,12 @@ const settings = {
       snap-x snap-mandatory top-10 z-20"
       >
         <Slider
-        {...settings} className="slider2  z-20 flex   align-middle justify-items-center -skew-y-2">
+        {...settings} className="slider2 z-20 flex align-middle justify-items-center -skew-y-2">
         {projects.map((project) => (
 
           <div
             key={project.id}
-            className="project--card row-span-full snap-center relative -top-12 justify-between    p-25 md:p-20 -skew-y-2 "
+            className="project--card snap-center relative -top-12 justify-between p-25 md:p-20 -skew-y-2 mx-3"
           >
             <div className="project--details space-y-2 max-w-xl ">
                 <h4 className="h4 uppercase xs:hidden md:block md:text-lg text-primary tracking-[2px]">

@@ -1,11 +1,17 @@
 import React from "react";
+import {useRef} from "react"
 import {navlink} from "../utils/navlinks.js";
 import Link from "next/link.js";
-type Props = {};
 
-function Header({}: Props) {
 
+function Header() {
+
+  const menuRef = useRef();
   
+  const menuToggle = () => menuRef.current.classList.toggle("active--menu")
+
+    
+
   return (
     <header className="navbar sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
       <a href="#hero">
@@ -14,23 +20,26 @@ function Header({}: Props) {
         </h2>
       </a>
 
-      <nav className="navbar--links">
-        <div className="flex flex-row items-center text-gray-300">
-            <div className=" nav-links pl-10">
+      <div className="nav--menu"  ref={menuRef}>
+        <div className="nav--list--wrapper flex flex-row items-center text-gray-300">
+            <div className="nav--list pl-10">
               {
                 navlink.map(item=>(
                   <Link href={item.href} key={item.id}>
-                  <button  className="heroButton active:text-primary" key={item.id}>{item.link}</button>
+                  <button  className="nav--item heroButton active:text-primary" key={item.id} onClick={menuToggle}>{item.link}</button>
                 </Link>
                 ))
               }
 
             </div>
         </div>
-      </nav>
-      
-      <div className="mobile-Menu text-primary font-bold text-2xl">
-        <span><i className="ri-menu-line" ></i></span>
+     
+
+      </div>
+
+     
+      <div className="mobile-Menu  text-primary font-bold text-2xl">
+        <span><i className="ri-menu-line" onClick={menuToggle} ></i></span>
       </div>
     </header>
   );

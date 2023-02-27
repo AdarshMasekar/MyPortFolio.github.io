@@ -50,18 +50,17 @@ const Experience = () => {
     transition={{
       duration: 1,ease:"easeIn"
     }}
-     className="w-full my-0 mx-auto h-screen flex space-x-20 overflow-x-auto p-10
+     className="w-full my-0 mx-auto h-screen flex space-x-4 overflow-x-hidden py-10 px-2
       snap-x snap-mandatory 
       
       ">
         <Slider
-        {...settings} className="relative slider z-20 flex align-middle justify-items-center  ">
+        {...settings} className="relative slider z-20  ">
         {experience.map(({id,role,company,cmlogo,duration,techstack,tasks}) => (
 
           <div
-          className="exp--card text-center  hover:opacity-100 opacity-80 flex flex-col rounded-2xl sm:rounded-2xl md:rounded-2xl items-center space-y-7 
-          flex-shrink-0  snap-center
-          bg-third/20 p-10  cursor-pointer transition-opacity duration-200 overflow-hidden mt-[140px]" key={id}>
+          className="exp--card text-center  hover:opacity-100 opacity-90 flex flex-col rounded-2xl sm:rounded-2xl md:rounded-2xl items-center space-y-4 
+          flex-shrink-0  snap-center bg-third/10 p-10  cursor-pointer transition-opacity duration-200 overflow-hidden mt-[140px]" key={id}>
           <motion.img
             initial={{
               y: -100,
