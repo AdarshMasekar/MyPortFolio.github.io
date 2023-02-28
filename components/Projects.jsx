@@ -53,9 +53,9 @@ const settings = {
 
           <div
             key={project.id}
-            className="project--card snap-center relative -top-12 justify-between p-25 md:p-20 -skew-y-2 mx-3"
+            className="project--card snap-center relative -top-12 justify-between xs:p-10 sm:p-25 md:p-20 -skew-y-2 mx-3"
           >
-            <div className="project--details space-y-2 max-w-xl ">
+            <div className="project--details space-y-2 max-w-xl px-3 align-middle justify-center -left-10 ">
                 <h4 className="h4 uppercase xs:hidden md:block md:text-lg text-primary tracking-[2px]">
                   Project Name :
                 </h4>

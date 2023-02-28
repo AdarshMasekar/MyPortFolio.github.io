@@ -36,9 +36,7 @@ function Header() {
      
 
       </div>
-      div
-
-     
+           
       <div className="mobile-Menu  text-primary font-bold text-2xl">
         <span><i className="ri-menu-line" onClick={menuToggle} ></i></span>
       </div>

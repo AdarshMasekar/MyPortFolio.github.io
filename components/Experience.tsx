@@ -77,7 +77,7 @@ const Experience = () => {
               once: true,
             }}
             src={cmlogo} key={id}
-            className="expimg w-20 h-20 rounded-full md:rounded-full relative xs:left-[25%] sm:left-[40%] lg:left-[44%] object-cover object-center "
+            className="expimg w-20 h-20 rounded-full md:rounded-full relative xs:left-[33%] sm:left-[40%] lg:left-[44%] object-cover object-center "
             alt=""
           />
 
@@ -87,7 +87,7 @@ const Experience = () => {
               {company}
             </p>
             
-            <picture className="flex space-x-2  my-2 items-center justify-center">
+            <picture className="flex space-x-2  my-2 px-5 items-center justify-center">
               {techstack.map(item=>(
               <div className="mx-2" key={id}>
                  <h2 className="text-primary  capitalize">{item}</h2>
@@ -101,7 +101,7 @@ const Experience = () => {
 
             <picture className="flex space-x-2  my-2 items-center justify-center">
             
-            <h2 className="text-primary xs:hidden bg-Bg p-4 rounded-lg sm:block">
+            <h2 className="text-primary xs:hidden bg-Bg p-4 rounded-lg sm:hidden md:block lg:block">
               Projects</h2>
               {tasks.map(item=>(
               <div className="mx-2" key={id}>
