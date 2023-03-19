@@ -81,7 +81,7 @@ const Hero = () => {
             />
 
           <span className="relative resume top-2" title="Resume">
-          <a className="resume" href="https://drive.google.com/file/d/19ka5FZQulybDoNthj5hBg0IOP7jbnh0w/view?usp=sharing" download="Adarsh_Masekar's_resume">
+          <a className="resume" href="https://drive.google.com/file/d/1orrnWSil7TJxurqDQ1yUu4pxSwiEN3zu/view?usp=share_link" download="Adarsh_Masekar's_resume">
           <i className="ri-download-line text-2xl text-primary p-3 bg-third/20 shadow-primary/60  shadow-md  rounded-full"></i>
           </a>
            
