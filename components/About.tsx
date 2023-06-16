@@ -37,7 +37,7 @@ const About = (props: Props) => {
         }} 
        src="https://avatars.githubusercontent.com/u/108608608?v=4"
         alt=""
-        className="opacity-80 xs:mt-40 sm:mt-24 md:mb-0  flex-shrink-0 rounded-full object-cover md:rounded-[20px] md:border-third md:border-2 w-[150px] h-[150px]  md:w-[300px] md:h-[400px] xl:w-[500px] xl:h-400px] my-10 sm:rounded-full xs:w-[150px] xs:h-[150px] "
+        className="opacity-80 xs:mt-28 sm:mt-16 md:mb-0  flex-shrink-0 rounded-full object-cover md:rounded-[20px] md:border-third md:border-2 w-[150px] h-[150px]  md:w-[300px] md:h-[400px] xl:w-[500px] xl:h-400px] my-10 sm:rounded-full xs:w-[150px] xs:h-[150px] "
       />
 
       <motion.div
@@ -57,7 +57,7 @@ const About = (props: Props) => {
       viewport={{
         once: true,
       }}
-       className="lg:mt-32 flex flex-col space-y-8  px-0 xs:my-0 sm:my-0 md:px-10">
+       className="xs:mt-4 lg:mt-32 flex flex-col space-y-8  px-0 xs:my-0 sm:my-0 md:px-10">
         <h4 className="text-secondary xs:text-[16px] sm:text-lg xl:text-lg font-bold uppercase tracking-[10px] md:mt-28 lg:-mt-10">
           Get to{" "}
           <span className="text-primary text-2xl font-semibold animate-pulse">

@@ -47,7 +47,7 @@ const settings = {
         className="w-full overflow-x-hidden overflow-y-hidden -skew-y-6 snap-x snap-mandatory top-10 z-20 flex flex-col"
       >
         <Slider
-        {...settings} className="slider2 z-20 items-center justify-center -skew-y-2">
+        {...settings} className="slider2 z-10 items-center justify-center -skew-y-2">
         {projects.map((project) => (
 
           <div
@@ -81,7 +81,7 @@ const settings = {
             <div className="project--img xs:hidden md:block ">
               <a href={project.demo}>
                 <motion.img
-                className="text-[#fff] float-right relative top-[-9rem] img"
+                className="text-[#fff] float-right relative top-[-9rem] img z-50"
                 src={project.image} width={800} height={800}
                 alt="Project Sample Images"
               />

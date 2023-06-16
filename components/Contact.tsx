@@ -62,7 +62,7 @@ const Contact = (props: Props) => {
       transition={{
         duration: 1,ease:"easeInOut"
       }} 
-       className="absolute top-48  mt-8 flex flex-col space-y-5 lg:w-[95%] h-[85%]  md:w-[90%]">
+       className="absolute top-48  mt-8 mb-8 flex flex-col space-y-5 lg:w-[95%] h-[90%]  md:w-[90%]">
         <div className="items-center justify-center  grid grid-cols-2 lg:grid-cols-4 gap-2 md:grid-cols-2 sm:grid-cols-2 ">
           <a href="https://goo.gl/maps/uWvrh5bDZR1y1fro8">
             <div className="flex flex-col flex-shrink-0 items-center  space-y-2 justify-center ">

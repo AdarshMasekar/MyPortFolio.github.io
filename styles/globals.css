@@ -69,7 +69,7 @@
     .project--details{
         @apply relative xs:w-72 xs:h-10 xs:top-28  xs:-left-4 xs:text-[15px]
         sm:w-72 sm:h-80 sm:top-20 sm:left-4
-        md:w-60 md:h-40 md:top-28  md:text-[12px] md:left-8
+        md:w-60 md:h-40 md:top-28  md:text-[15px] md:left-8
         lg:w-96 lg:h-80 lg:top-0 lg:left-12
         xl:w-96 xl:h-80 xl:top-36 xl:left-12
     }
