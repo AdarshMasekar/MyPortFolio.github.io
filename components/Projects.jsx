@@ -44,23 +44,22 @@ const settings = {
           transition={{
             duration: 1.6,
           }} 
-        className="relative w-full flex overflow-x-hidden overflow-y-hidden -skew-y-6
-      snap-x snap-mandatory top-10 z-20"
+        className="w-full overflow-x-hidden overflow-y-hidden -skew-y-6 snap-x snap-mandatory top-10 z-20 flex flex-col"
       >
         <Slider
-        {...settings} className="slider2 z-20 flex align-middle justify-items-center -skew-y-2">
+        {...settings} className="slider2 z-20 items-center justify-center -skew-y-2">
         {projects.map((project) => (
 
           <div
             key={project.id}
-            className="project--card snap-center relative -top-12 justify-between xs:p-20 sm:p-20 md:p-25 -skew-y-2 mx-3"
+            className="project--card flex snap-center relative -top-10  xs:p-5 sm:p-5 md:p-5 -skew-y-2 mx-2 overflow-hidden"
           >
-            <div className="project--details space-y-2 max-w-xl px-3 align-middle justify-center -left-10 ">
-                <h4 className="h4 uppercase xs:hidden md:block md:text-lg text-primary tracking-[2px]">
+            <div className="project--details space-y-1 max-w-xl p-8 xs:p-5 sm:p-8 md:p-15  ">
+                <h4 className="h4 uppercase xs:hidden md:block md:text-sm lg:text-lg text-primary tracking-[2px]">
                   Project Name :
                 </h4>
-                <span className="uppercase xs:text-sm md:text-lg font-semibold text-[#f98547] animate-pulse">
-                    {project.name}
+                <span className="uppercase xs:text-sm md:text-sm lg:text-lg font-semibold text-[#f98547] animate-pulse">
+                    {project.name}  
                   </span>
                 <h2 className="h2 uppercase xs:text-[10px] md:text-sm text-secondary tracking-[2px]">
                   Domain :
@@ -68,7 +67,7 @@ const settings = {
                     {project.domain}
                   </span>
                 </h2>
-                <p className="p px-2 tracking-wider text-third/70">
+                <p className="p px-2 tracking-wider text-third/70 text-justify">
                 {project.details}
                 </p>
                   <button className="heroButton"><a href={project.code}>
@@ -78,7 +77,6 @@ const settings = {
                     live demo</a>
                   </button> : <></>}
             </div>
-
 
             <div className="project--img xs:hidden md:block ">
               <a href={project.demo}>

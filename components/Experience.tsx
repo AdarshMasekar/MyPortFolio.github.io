@@ -61,25 +61,7 @@ const Experience = () => {
           <div
           className="exp--card text-center  hover:opacity-100 opacity-90 flex flex-col rounded-2xl sm:rounded-2xl md:rounded-2xl items-center space-y-4 
           flex-shrink-0  snap-center bg-third/10 p-10  cursor-pointer transition-opacity duration-200 overflow-hidden mt-[140px]" key={id}>
-          <motion.img
-            initial={{
-              y: -100,
-              opacity: 0,
-            }}
-            transition={{
-              duration: 1.2,
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-            }}
-            viewport={{
-              once: true,
-            }}
-            src={cmlogo} key={id}
-            className="expimg w-20 h-20 rounded-full md:rounded-full relative xs:left-[33%] sm:left-[40%] lg:left-[44%] object-cover object-center "
-            alt=""
-          />
+
 
           <div className="exp--details px-4 xs:mx-0 md:px-10">
             <h4 className="text-xl px-4 font-bold tracking-wider text-primary  animate-pulse hover:animate-none">{role}</h4>

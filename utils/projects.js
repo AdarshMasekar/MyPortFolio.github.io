@@ -22,19 +22,19 @@ export const projects = [{
         id: 3,
         image: "https://i.imgur.com/puM5iZM.png",
         name: "Phishing URL detection",
-        code: "https://adarsh.youtube.vercel.app/",
+        code: "https://github.com/AdarshMasekar/Website-Phishing-Detection",
         demo: "",
         domain: "Web Development",
         details: "This web application is our final year project which can detect the phishing urls using CNN and XGBoost Algorithms"
     },
-    // {
-    //     id: 4,
-    //     image: "https://images.unsplash.com/photo-1677165621021-4578f595a630?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1136&q=80",
-    //     name: "Responsive Portfolio Website",
-    //     code: "https://web.whatsapp.com/",
-    //     demo: "https://web.whatsapp.com/",
-    //     domain: "Web Development",
-    //     details: "This is a responsive portfolio website built with react, typescript and along with other dependecies. For more details check out source code or live demo"
+    {
+        id: 4,
+        image: "https://i.imgur.com/ZcNr0X4.png",
+        name: "In Progress  : Show Space",
+        code: "https://github.com/AdarshMasekar/Internship-Project---Show-Space",
+        demo: "https://show-space.netlify.app/",
+        domain: "Web Development",
+        details: "This is a simple website to which includes fetching data from external api and render the show details."
 
-    // }
+    }
 ]

@@ -37,7 +37,7 @@ const About = (props: Props) => {
         }} 
        src="https://avatars.githubusercontent.com/u/108608608?v=4"
         alt=""
-        className="opacity-80 xs:mt-52 sm:mt-32 md:mb-0  flex-shrink-0 w-[150px] h-[150px] rounded-full object-cover md:rounded-[20px] md:border-third md:border-2 md:w-[300px] md:h-[400px] xl:w-[500px] xl:h-400px] my-10 sm:rounded-full xs:w-[200px] xs:h-[200px]"
+        className="opacity-80 xs:mt-40 sm:mt-24 md:mb-0  flex-shrink-0 rounded-full object-cover md:rounded-[20px] md:border-third md:border-2 w-[150px] h-[150px]  md:w-[300px] md:h-[400px] xl:w-[500px] xl:h-400px] my-10 sm:rounded-full xs:w-[150px] xs:h-[150px] "
       />
 
       <motion.div
@@ -66,7 +66,7 @@ const About = (props: Props) => {
           me
         </h4>
         <hr color="white" className="w-100 text-third h-[2px]"/>
-        <p className="tracking-widest leading-8 text-third xs:text-lg md:text-lg text-justify">
+        <p className="tracking-widest leading-8 text-third xs:text-sm md:text-md lg:text-lg text-justify">
           I&apos;m a  <span className="text-underline">2023 </span>batch Graduate student from <span className="branch text-underline" id="branch">Computer Science and Engineering </span>, My current <span className="text-semibold text-primary/90">CGPA</span> is <span className="text-bolder text-primary">8.5. </span>
           I have done Internship in <span className="text-semibold text-underline">Datascience</span>,
           My Technical skills include <span className="text-semi-bold text text-underline"> C++, Python, HTML/CSS, REACT, Java</span> etc.
