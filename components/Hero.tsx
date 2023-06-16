@@ -11,10 +11,10 @@ const Hero = () => {
 
   const [text] = useTypewriter({
     words: [
-      "{{ React, Next, TypeScript }}",
       'console.log("Hello World")',
       "<WebDeveloper />",
       "<Frontend Engineer />",
+      "{{ React, Next, TypeScript }}",
     ],
     loop: true,
     delaySpeed: 5000,

@@ -7,11 +7,11 @@ import {projects} from "../utils/projects.js";
 const Projects = () => {
 const settings = {
   infinite: true,
-  speed: 3000,
+  speed: 2000,
   slidesToShow:1,
   slidesToScroll:-1,
   autoplay:true,
-  autoplaySpeed:4000,
+  autoplaySpeed:5000,
   draggable:true,
   pauseOnFocus:true,
   SwipeDirection:"right",
@@ -53,7 +53,7 @@ const settings = {
 
           <div
             key={project.id}
-            className="project--card snap-center relative -top-12 justify-between xs:p-10 sm:p-25 md:p-20 -skew-y-2 mx-3"
+            className="project--card snap-center relative -top-12 justify-between xs:p-20 sm:p-20 md:p-25 -skew-y-2 mx-3"
           >
             <div className="project--details space-y-2 max-w-xl px-3 align-middle justify-center -left-10 ">
                 <h4 className="h4 uppercase xs:hidden md:block md:text-lg text-primary tracking-[2px]">
@@ -74,9 +74,9 @@ const settings = {
                   <button className="heroButton"><a href={project.code}>
                     Source code</a>
                   </button>
-                  <button className="heroButton"><a href={project.demo}>
+                 {project.demo != "" ? <button className="heroButton"><a href={project.demo}>
                     live demo</a>
-                  </button>
+                  </button> : <></>}
             </div>
 
 
@@ -84,8 +84,8 @@ const settings = {
               <a href={project.demo}>
                 <motion.img
                 className="text-[#fff] float-right relative top-[-9rem] img"
-                src={project.image} width={400} height={400}
-                alt="Photos Icon Responsive"
+                src={project.image} width={800} height={800}
+                alt="Project Sample Images"
               />
               </a>
             </div>

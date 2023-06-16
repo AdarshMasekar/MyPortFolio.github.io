@@ -45,8 +45,8 @@
     }
 
     .img{
-        border: 1px solid #3c3c3cd3;
-        box-shadow: 5px 5px 10px 4px #F3A49F;
+        border: 1px solid #d9eef570;
+        box-shadow: 0px 5px 10px 2px #111111;
     }
     .slider{
         z-index:500;
@@ -70,14 +70,14 @@
         @apply relative sm:w-96 sm:h-80 sm:top-16
         xs:w-72 xs:h-10 xs:top-28 xs:text-[15px]
         md:w-60 md:h-40 md:top-6 md:-left-16 md:text-[15px]
-        lg:w-96 lg:h-80 lg:top-16 lg:left-10
-        xl:w-96 xl:h-80 xl:top-16 xl:left-10
+        lg:w-96 lg:h-80 lg:top-16 lg:left-12
+        xl:w-96 xl:h-80 xl:top-16 xl:left-12
     }
     .project--img{
         @apply cursor-pointer relative flex 
-        md:w-64 md:h-60 md:top-20 md:left-14 md:float-right
-        lg:w-96 lg:h-80 lg:-top-32 lg:-left-10 lg:float-right
-        xl:w-96 xl:h-80 xl:-top-32 xl:-left-10 xl:float-right
+        md:w-[500px] md:h-60 md:top-20 md:left-14 md:float-right
+        lg:w-[500px] lg:h-80 lg:-top-32 lg:-left-10 lg:float-right
+        xl:w-[500px] xl:h-80 xl:-top-32 xl:-left-10 xl:float-right
     }
         
     .exp--details{

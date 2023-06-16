@@ -3,15 +3,17 @@ export const skillset = [
 
     {
         id: 1,
-        tech:"https://cdn-icons-png.flaticon.com/512/6132/6132222.png" ,
-        lvl: "90%",
-        stack: "C++"
+        tech: "https://cdn-icons-png.flaticon.com/512/226/226777.png",
+        lvl: "70%",
+        stack: "JAVA",
+       
     },
     {
         id: 2,
-        tech: "https://cdn-icons-png.flaticon.com/512/5968/5968350.png",
-        lvl: "80%",
-        stack: "PYTHON",
+        tech:"https://cdn-icons-png.flaticon.com/512/6132/6132222.png" ,
+        lvl: "90%",
+        stack: "C++"
+        
     },
     {
         id: 3,
@@ -27,9 +29,9 @@ export const skillset = [
     },
     {
         id: 5,
-        tech: "https://cdn-icons-png.flaticon.com/512/226/226777.png",
-        lvl: "60%",
-        stack: "JAVA",
+        tech: "https://cdn-icons-png.flaticon.com/512/5968/5968350.png",
+        lvl: "80%",
+        stack: "PYTHON",
     },
     {
         id: 6,

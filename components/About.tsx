@@ -66,7 +66,7 @@ const About = (props: Props) => {
           me
         </h4>
         <hr color="white" className="w-100 text-third h-[2px]"/>
-        <p className="tracking-widest leading-8 text-third xs:text-lg md:text-lg ">
+        <p className="tracking-widest leading-8 text-third xs:text-lg md:text-lg text-justify">
           I&apos;m a  <span className="text-underline">2023 </span>batch Graduate student from <span className="branch text-underline" id="branch">Computer Science and Engineering </span>, My current <span className="text-semibold text-primary/90">CGPA</span> is <span className="text-bolder text-primary">8.5. </span>
           I have done Internship in <span className="text-semibold text-underline">Datascience</span>,
           My Technical skills include <span className="text-semi-bold text text-underline"> C++, Python, HTML/CSS, REACT, Java</span> etc.
