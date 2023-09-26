@@ -6,7 +6,7 @@ export const experience = [
         cmlogo: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.crunchbase.com%2Forganization%2Fkodnest&psig=AOvVaw1aECST8ZQ_o7mUmg51dvYN&ust=1695788357780000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKC9hoe2x4EDFQAAAAAdAAAAABAE",
         duration: "July 23 - Present",
         techstack: [ "Java","MySQL","HTML/CSS","React ...."],
-        tasks: ["",""],
+        tasks: ["ShopNest E-Commerce Web appication",""],
     },{
         id: 2,
         role: "Datascience Intern",
