@@ -81,7 +81,7 @@ const settings = {
             <div className="project--img xs:hidden md:block ">
               <a href={project.demo}>
                 <motion.img
-                className="text-[#fff] float-right relative top-[-9rem] img z-50"
+                className="text-[#fff] float-right relative top-[-12rem] img z-50"
                 src={project.image} width={800} height={800}
                 alt="Project Sample Images"
               />
