@@ -11,13 +11,13 @@ const Hero = () => {
 
   const [text] = useTypewriter({
     words: [
-      'console.log("Hello World")',
+      'System.out.println("Hello World");',
       "<WebDeveloper />",
       "<Frontend Engineer />",
       "{{ React, Next, TypeScript }}",
     ],
     loop: true,
-    delaySpeed: 5000,
+    delaySpeed: 3000,
   });
 
   return (
@@ -81,8 +81,8 @@ const Hero = () => {
             />
 
           <span className="relative resume top-2" title="Resume">
-          <a className="resume" href="https://drive.google.com/file/d/1orrnWSil7TJxurqDQ1yUu4pxSwiEN3zu/view?usp=share_link" download="Adarsh_Masekar's_resume">
-          <i className="ri-download-line text-2xl text-primary p-3 bg-third/20 shadow-primary/60  shadow-md  rounded-full"></i>
+          <a className="resume" href="https://drive.google.com/file/d/1Kcg6PNJuTkCsSHb1e8r5X4PvkH-XHZG8/view?usp=sharing" download="Adarsh_Masekar's_resume">
+          <i className="ri-download-line text-2xl text-primary p-3 bg-third/20 shadow-secondary/70  shadow-md  rounded-full"></i>
           </a>
            
              </span>
