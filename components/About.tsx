@@ -67,11 +67,11 @@ const About = (props: Props) => {
         </h4>
         <hr color="white" className="w-100 text-third h-[2px]"/>
         <p className="tracking-widest leading-8 text-third xs:text-sm md:text-md lg:text-lg text-justify">
-          I&apos;m a  <span className="text-underline">2023 </span> B.E Computer Science Graduate student from <span className="branch text-underline" id="branch"> Visvesvaraya Technological University(VTU) </span>, I have secured an aggregate of <span className="text-semibold text-primary/90">8.69</span><span className="text-bolder text-primary">CGPA </span>
-          at the end of my 8th semister,I have currently doing Internship in <span className="text-semibold text-underline">Java Fullstack at Kodnest</span>,
-          My Technical skills include <span className="text-semi-bold text text-underline"> Java, MySQL, C, C++, HTML/CSS, REACT</span> etc.
-          I have Been active on  <span className="text-bold text-xl text-underline"><a href="https://leetcode.com/adarshmasekar/">Leetcode</a> </span> and <span className="text-bold text-xl text-underline"> <a href="https://www.codingninjas.com/codestudio/profile/Adarsh_55">Coding Ninjas</a></span>
-           platforms for practicing problem solving skills and enhancing how to use my <span className="text-semibold text-underline/90">DSA</span> knowledge in realworld .
+          
+I am a <span className="text-underline">recent graduate</span> with a <span className="text-underline">Bachelor's degree in Computer Science</span> from <span className="text-underline">Visvesvaraya Technological University (VTU)</span>, graduating in <span className="text-underline">2023</span></span>. I have achieved an aggregate of <span className="text-underline">8.69 CGPA</span> at the end of my 8th semester. Currently, I am gaining valuable industry experience through an internship at Kodnest, where I am immersed in Java Fullstack development.
+
+My technical skill set is robust and includes proficiency in  <span className="text-semi-bold text text-underline">Java, MySQL, C, C++, HTML/CSS, and REACT</span>, among others. I have a keen interest in algorithmic problem-solving and have been actively participating on platforms like <span className="text-bold text-xl text-underline"><a href="https://leetcode.com/adarshmasekar/">Leetcode</a> </span> and  <span className="text-bold text-xl text-underline"> <a href="https://www.codingninjas.com/codestudio/profile/Adarsh_55">Coding Ninjas</a></span> to sharpen my data structures and algorithms knowledge while applying it to real-world scenarios.
+          
         </p>
       </motion.div>
       
