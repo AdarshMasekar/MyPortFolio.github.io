@@ -67,9 +67,9 @@ const About = (props: Props) => {
         </h4>
         <hr color="white" className="w-100 text-third h-[2px]"/>
         <p className="tracking-widest leading-8 text-third xs:text-sm md:text-md lg:text-lg text-justify">
-          I&apos;m a  <span className="text-underline">2023 </span>batch Graduate student from <span className="branch text-underline" id="branch">Computer Science and Engineering </span>, My current <span className="text-semibold text-primary/90">CGPA</span> is <span className="text-bolder text-primary">8.5. </span>
-          I have done Internship in <span className="text-semibold text-underline">Datascience</span>,
-          My Technical skills include <span className="text-semi-bold text text-underline"> C++, Python, HTML/CSS, REACT, Java</span> etc.
+          I&apos;m a  <span className="text-underline">2023 </span> B.E Computer Science Graduate student from <span className="branch text-underline" id="branch"> Visvesvaraya Technological University(VTU) </span>, I have secured an aggregate of <span className="text-semibold text-primary/90">8.69</span><span className="text-bolder text-primary">CGPA </span>
+          at the end of my 8th semister,I have currently doing Internship in <span className="text-semibold text-underline">Java Fullstack at Kodnest</span>,
+          My Technical skills include <span className="text-semi-bold text text-underline"> Java, MySQL, C, C++, HTML/CSS, REACT</span> etc.
           I have Been active on  <span className="text-bold text-xl text-underline"><a href="https://leetcode.com/adarshmasekar/">Leetcode</a> </span> and <span className="text-bold text-xl text-underline"> <a href="https://www.codingninjas.com/codestudio/profile/Adarsh_55">Coding Ninjas</a></span>
            platforms for practicing problem solving skills and enhancing how to use my <span className="text-semibold text-underline/90">DSA</span> knowledge in realworld .
         </p>
