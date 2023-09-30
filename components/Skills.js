@@ -28,9 +28,9 @@ function Skills({tech,lvl,stack}) {
     opacity-0 group-hover:opacity-100 group-hover:bg-[#000]/10 z-0
     transition duration-400 ease-in-out group-hover:animate-bounce">
       <div className="flex items-center justify-center h-full">
-        <p className="text-2xl font-bold text-primary opacity-100">{lvl}</p>
+        <p className="text-2xl font-bold text-secondary opacity-100">{lvl}</p>
       </div>
-      <p className="text-bold text-center my-2 text-primary">{stack}</p>
+      <p className="font-bold text-center my-2 text-primary">{stack}</p>
     </div>
    
   </motion.div>
