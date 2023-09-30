@@ -51,7 +51,7 @@ const TechSkills = (props: Props) => {
         duration: 1,
         ease:"easeIn"
       }}
-     className="grid justify-center grid-cols-3 gap-10 lg:grid-cols-5 lg:gap-10 md:grid-cols-4 md:gap-8 xs:grid-cols-3 sm:gap-6 xs:gap-7 absolute top-60">
+     className="grid justify-center grid-cols-3 gap-10 lg:grid-cols-4 lg:gap-10 md:grid-cols-4 md:gap-8 xs:grid-cols-3 sm:gap-6 xs:gap-7 absolute top-60">
       {
         skillset.map(item=>(
           <Skills key={item.id} tech={item.tech} lvl={item.lvl} stack={item.stack}/>
